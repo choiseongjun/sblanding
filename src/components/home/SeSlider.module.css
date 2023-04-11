@@ -1,0 +1,67 @@
+.mainCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.mainTitle {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.orange {
+  color: #f39700;
+}
+.cir_tx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.cir {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  width: 24vw;
+  padding: 0.8vw;
+  border: 2px solid #ccc;
+  margin-right: 20px;
+  text-align: center;
+}
+.cir span {
+  font-size: 30px;
+}
+.cir_tx2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 200px;
+}
+.cir2 {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  width: 24vw;
+  padding: 0.8vw;
+  border: 2px solid #ccc;
+  margin-right: 20px;
+  text-align: center;
+}
+.tx2_title div {
+  font-size: 50px;
+}
+.cir2Box {
+  display: flex;
+}
+@media (max-width: 575px) {
+  .robot {
+    display: none !important;
+  }
+  .cir_tx {
+    display: flex;
+  }
+  .cir {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
