@@ -2,7 +2,7 @@ import React from "react";
 import style from "./StockInfo.module.css";
 import DateCp from "../common/DateCp";
 
-const StockTwo = ({ title }: any) => {
+const StockTwo = ({ title, data1 }: any) => {
   return (
     <div className={style.tab1}>
       <div className={style.box}>
@@ -30,47 +30,38 @@ const StockTwo = ({ title }: any) => {
             </tr>
           </thead>
           <tbody className="thead-light">
-            <tr>
-              <td>
-                <div className={style.tdBox}>
-                  <span className="badge badge-success">1</span>
-                  스마트폰
-                </div>
-              </td>
-              <td>
-                <div className={style.tdSecond}>
-                  <div className={style.elipsis}>알에프세미</div>
-                  <span style={{ color: "red", paddingRight: 20 }}>
-                    <i className="fa fa-long-arrow-up"></i>
-                    30.00%
-                  </span>
-                </div>
-              </td>
-              <td>
-                <div className={style.tdSecond}>
-                  <div className={style.elipsis}>노바텍</div>
-                  <span style={{ color: "red", paddingRight: 20 }}>
-                    <i className="fa fa-long-arrow-up"></i>
-                    29.91%
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={style.tdBox}>
-                  <span className="badge badge-success">2</span>
-                  화장품
-                </div>
-              </td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {data1.length > 0 &&
+              data1
+                .filter((item: any) => item.gubun === "2")
+                .map((item: any, idx: number) => (
+                  <tr key={idx}>
+                    <td>
+                      <div className={style.tdBox}>
+                        {/* {item.firstTxt.substr(0, 1)} */}
+
+                        {item.firstTxt.substr(1, 99)}
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span className={style.boxI}>
+                          {item.secondTxt.substr(0, 1)}
+                        </span>
+                        <span style={{ paddingLeft: 20 }}>
+                          {item.secondTxt.substr(1, 20)}
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <div className={style.elipsis}>
+                          {item.thirdTxt.split("\n")[1]}
+                        </div>
+                        <span>{item.thirdTxt.split("\n")[0]}</span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
           </tbody>
         </table>
       </div>

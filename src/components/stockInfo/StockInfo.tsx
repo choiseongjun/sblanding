@@ -11,17 +11,17 @@ const StockInfo = () => {
     axios
       .get("/v1/kops/stock/info")
       .then((res) => {
-        setData1(res.data[0]);
+        setData1(res.data);
       })
       .catch((err) => console.log(err));
   };
   useEffect(() => {
-    // getStock();
+    getStock();
   }, []);
   return (
     <div className={style.container}>
       {data1.length > 0 && <StockOne title="오늘의 테마종목" data1={data1} />}
-      <StockTwo title="공모주 청약일정" />
+      {data1.length > 0 && <StockTwo title="공모주 청약일정" data1={data1} />}
       {/* <StockOne title="공모주 상장일정" /> */}
     </div>
   );

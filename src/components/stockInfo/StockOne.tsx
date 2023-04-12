@@ -31,40 +31,42 @@ const StockOne = ({ title, data1 }: any) => {
           </thead>
           <tbody className="thead-light">
             {data1.length > 0 &&
-              data1.map((item: any) => (
-                <tr>
-                  <td>
-                    <div className={style.tdBox}>
-                      <span className="badge badge-success">
-                        {item.firstTxt.substr(0, 1)}
-                      </span>
-                      {item.firstTxt.substr(1, 99)}
-                    </div>
-                  </td>
-                  <td>
-                    <div className={style.tdSecond}>
-                      <div className={style.elipsis}>
-                        {item.secondTxt.split("\n")[1]}
+              data1
+                .filter((item: any) => item.gubun === "1")
+                .map((item: any, idx: number) => (
+                  <tr key={idx}>
+                    <td>
+                      <div className={style.tdBox}>
+                        <span className="badge badge-success">
+                          {item.firstTxt.substr(0, 1)}
+                        </span>
+                        {item.firstTxt.substr(1, 99)}
                       </div>
-                      <span style={{ color: "red", paddingRight: 20 }}>
-                        <i className="fa fa-long-arrow-up"></i>
-                        {item.secondTxt.split("\n")[0]}
-                      </span>
-                    </div>
-                  </td>
-                  <td>
-                    <div className={style.tdSecond}>
-                      <div className={style.elipsis}>
-                        {item.thridTxt.split("\n")[1]}
+                    </td>
+                    <td>
+                      <div className={style.tdSecond}>
+                        <div className={style.elipsis}>
+                          {item.secondTxt.split("\n")[1]}
+                        </div>
+                        <span style={{ color: "red", paddingRight: 20 }}>
+                          <i className="fa fa-long-arrow-up"></i>
+                          {item.secondTxt.split("\n")[0]}
+                        </span>
                       </div>
-                      <span style={{ color: "red", paddingRight: 20 }}>
-                        <i className="fa fa-long-arrow-up"></i>
-                        {item.thridTxt.split("\n")[0]}
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              ))}
+                    </td>
+                    <td>
+                      <div className={style.tdSecond}>
+                        <div className={style.elipsis}>
+                          {item.thirdTxt.split("\n")[1]}
+                        </div>
+                        <span style={{ color: "red", paddingRight: 20 }}>
+                          <i className="fa fa-long-arrow-up"></i>
+                          {item.thirdTxt.split("\n")[0]}
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
           </tbody>
         </table>
       </div>

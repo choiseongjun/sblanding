@@ -43,3 +43,11 @@
   color: #013472;
   font-family: "Noto Sans Kr";
 }
+.boxI {
+  /* display: block; */
+
+  padding: 1.5px;
+  font-size: 3px;
+  color: #fff;
+  background-color: #28a745;
+}

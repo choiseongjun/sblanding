@@ -9,12 +9,13 @@ const SecondInfo = () => {
 
   const getIncreaseStock = () => {
     axios.get("/v1/kops/increase/stock").then((res) => {
-      setUpStock(res.data[0]);
-      setMajorInfo(res.data[1]);
+      console.log(res.data);
+      setUpStock(res.data);
+      // setMajorInfo(res.data[1]);
     });
   };
   useEffect(() => {
-    // getIncreaseStock();
+    getIncreaseStock();
   }, []);
   return (
     <div
@@ -56,32 +57,51 @@ const SecondInfo = () => {
             </div>
             <DateCp />
           </div>
-          <div style={{ height: "100%", backgroundColor: "#fff" }}>
+          <div
+            style={{
+              height: "100%",
+
+              backgroundColor: "#fff",
+            }}
+          >
             {upStock.length > 0 &&
-              upStock.map((item: any) => (
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    paddingTop: 25,
-                  }}
-                >
+              upStock
+                .filter((item: any) => item.gubun == "1")
+                .map((item: any, idx: number) => (
                   <div
+                    key={idx}
                     style={{
-                      color: "#013472",
-                      fontWeight: 400,
-                      paddingLeft: 20,
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+
+                      paddingTop: 15,
                     }}
                   >
-                    {item.name}
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        width: "80%",
+                        borderBottom: "1px dotted #ccc",
+                        paddingBottom: 10,
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#013472",
+                          fontWeight: 400,
+                        }}
+                      >
+                        {item.name}
+                      </div>
+                      <span style={{ color: "red" }}>
+                        <i className="fa fa-long-arrow-up"></i>
+                        {item.name2}
+                      </span>
+                    </div>
                   </div>
-                  <span style={{ color: "red", paddingRight: 20 }}>
-                    <i className="fa fa-long-arrow-up"></i>
-                    {item.name2}
-                  </span>
-                </div>
-              ))}
+                ))}
           </div>
         </div>
         <div style={{ width: 588, height: 276 }}>
@@ -107,15 +127,17 @@ const SecondInfo = () => {
             </div>
           </div>
           <div style={{ height: "100%", backgroundColor: "#fff" }}>
-            {majorInfo.length > 0 &&
-              majorInfo.map((item: any) => (
-                <div className={styles.majorBox}>
-                  <div className={styles.major}>
-                    <div>{item.name.substr(0, 5)}</div>
-                    <div>{item.name.substr(5, 99)}</div>
+            {upStock.length > 0 &&
+              upStock
+                .filter((item: any) => item.gubun === "2")
+                .map((item: any, idx: number) => (
+                  <div key={idx} className={styles.majorBox}>
+                    <div className={styles.major}>
+                      <div>{item.name.substr(0, 5)}</div>
+                      <div>{item.name.substr(5, 99)}</div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
           </div>
         </div>
       </div>
