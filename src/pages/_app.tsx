@@ -4,8 +4,8 @@ import axios from "axios";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
-  axios.defaults.baseURL = "https://sbstock.co.kr/";
-
+  // axios.defaults.baseURL = "https://sbstock.co.kr/";
+  axios.defaults.baseURL = "http://localhost:8080"
   return (
     <>
       <Head>

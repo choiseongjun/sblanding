@@ -18,7 +18,7 @@
   /* justify-content: space-between; */
   padding-top: 15px;
   padding-bottom: 10px;
-  width: 90%;
+  width: 100%;
   border-bottom: 1px dotted #ccc;
 }
 .major > div:first-child {
@@ -37,6 +37,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 15px;
+}
+.contentBox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
 }
 @media (max-width: 675px) {
   .box {
@@ -62,10 +69,16 @@
   .content > div {
     width: 20%;
   }
+  .major{
+    width:90%;
+  }
   .majorBox {
     display: flex;
     justify-content: flex-start;
     padding-left: 10px;
     width: 100%;
+  }
+  .contentBox{
+    width:"80%";
   }
 }

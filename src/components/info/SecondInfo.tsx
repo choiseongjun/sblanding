@@ -9,7 +9,6 @@ const SecondInfo = () => {
 
   const getIncreaseStock = () => {
     axios.get("/v1/kops/increase/stock").then((res) => {
-      console.log(res.data);
       setUpStock(res.data);
       // setMajorInfo(res.data[1]);
     });
@@ -20,21 +19,9 @@ const SecondInfo = () => {
   return (
     <div
       className={styles.container}
-      // style={{
-      //   // backgroundColor: "#333",
-      //   background:
-      //     "rgba(0,0,0,.9) url(https://www.kokstock.com/images/renewal/main/ytb_bg_1.png) repeat-x center/cover",
-      //   height: 476,
-      // }}
     >
       <div
         className={styles.box}
-        // style={{
-        //   display: "flex",
-        //   justifyContent: "center",
-        //   paddingTop: 70,
-        //   gap: 30,
-        // }}
       >
         <div className={styles.boxWrapper}>
           <div
@@ -72,13 +59,7 @@ const SecondInfo = () => {
                 .map((item: any, idx: number) => (
                   <div key={idx} className={styles.content}>
                     <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        width: "80%",
-                        borderBottom: "1px dotted #ccc",
-                        paddingBottom: 10,
-                      }}
+                      className={styles.contentBox}
                     >
                       <div
                         style={{
