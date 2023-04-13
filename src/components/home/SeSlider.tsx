@@ -79,7 +79,31 @@ const SeSlider = () => {
       </div>
       <div>
         <div>
-          <div className="customSlide2"></div>
+          <div className="customSlide2">
+        
+            <div className="txt_wrap txt_green">
+              <div className={style.cir_tx2}>
+                <div className={style.tx2_title}>
+                  <div>매일 2종목에 분산투자하여</div>
+                  <div style={{textAlign:'center'}} className={style.orange}>리스크를 줄여보세요.</div>
+                </div>
+                <div className={style.cir2Box}>
+                  <div className={style.cir2}>
+                    <div>
+                      1호 2호
+                    </div>
+                  2종목에 분산 투자!!
+                  </div>
+                  <div className={style.cir2}>
+                    <div>
+                     2주 무료체험 신청하기
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div>
