@@ -51,3 +51,8 @@
   color: #fff;
   background-color: #28a745;
 }
+@media (max-width: 675px) {
+  .box{
+    height:auto;
+  }
+}

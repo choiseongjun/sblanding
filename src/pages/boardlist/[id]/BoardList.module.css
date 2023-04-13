@@ -9,3 +9,15 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 675px) {
+  .container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .box {
+    width: 100%;
+  }
+  .container table {
+    width: 500px;
+  }
+}

@@ -1,3 +1,13 @@
+.container {
+  background: "rgba(0,0,0,.9) url(https://www.kokstock.com/images/renewal/main/ytb_bg_1.png) repeat-x center/cover";
+  height: 476px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  gap: 30px;
+}
 .majorBox {
   display: flex;
   justify-content: center;
@@ -17,4 +27,45 @@
 .major > div:nth-child(2) {
   color: #68862b;
   padding-left: 15px;
+}
+.boxWrapper {
+  width: 588px;
+  height: 276px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+@media (max-width: 675px) {
+  .box {
+    flex-direction: column;
+    height: 100%;
+  }
+  .container {
+    height: 100%;
+  }
+  .boxWrapper {
+    width:calc(100% + 70px);
+    height: 400px;
+  }
+  .boxWrapper1 {
+    width:calc(100% + 30px);
+    height: 400px;
+  }
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .content > div {
+    width: 20%;
+  }
+  .majorBox {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    width: 100%;
+  }
 }

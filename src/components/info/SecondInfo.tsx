@@ -19,22 +19,24 @@ const SecondInfo = () => {
   }, []);
   return (
     <div
-      style={{
-        // backgroundColor: "#333",
-        background:
-          "rgba(0,0,0,.9) url(https://www.kokstock.com/images/renewal/main/ytb_bg_1.png) repeat-x center/cover",
-        height: 476,
-      }}
+      className={styles.container}
+      // style={{
+      //   // backgroundColor: "#333",
+      //   background:
+      //     "rgba(0,0,0,.9) url(https://www.kokstock.com/images/renewal/main/ytb_bg_1.png) repeat-x center/cover",
+      //   height: 476,
+      // }}
     >
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          paddingTop: 70,
-          gap: 30,
-        }}
+        className={styles.box}
+        // style={{
+        //   display: "flex",
+        //   justifyContent: "center",
+        //   paddingTop: 70,
+        //   gap: 30,
+        // }}
       >
-        <div style={{ width: 588, height: 276 }}>
+        <div className={styles.boxWrapper}>
           <div
             style={{
               height: 52.52,
@@ -68,16 +70,7 @@ const SecondInfo = () => {
               upStock
                 .filter((item: any) => item.gubun == "1")
                 .map((item: any, idx: number) => (
-                  <div
-                    key={idx}
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-
-                      paddingTop: 15,
-                    }}
-                  >
+                  <div key={idx} className={styles.content}>
                     <div
                       style={{
                         display: "flex",
@@ -104,7 +97,7 @@ const SecondInfo = () => {
                 ))}
           </div>
         </div>
-        <div style={{ width: 588, height: 276 }}>
+        <div className={styles.boxWrapper1}>
           <div
             style={{
               height: 52.52,
