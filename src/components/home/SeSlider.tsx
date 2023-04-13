@@ -52,18 +52,20 @@ const SeSlider = () => {
                 주식종목 추천서비스
               </div>
             </div>
-            <img
-              className={style.robot}
-              style={{ position: "absolute", bottom: -180, left: -100 }}
-              src="https://www.kokstock.com/images/renewal/main/hand2.png"
-            />
+            
             <div className={style.cir_tx}>
+        
               <div className={style.cir}>
                 <div>
                   <span className={style.orange}>콕!</span> 짚어서{" "}
                   <span className={style.orange}>톡!</span>
                 </div>
                 <div>상승할 종목을 콕 짚어드립니다.</div>
+                <img
+                  className={style.robot}
+                  // style={{ position: "absolute", bottom: -180, left: "-15%" }}
+                  src="https://www.kokstock.com/images/renewal/main/hand2.png"
+                />
               </div>
               <div className={style.cir}>
                 <div>

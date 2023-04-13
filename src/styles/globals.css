@@ -2,6 +2,7 @@
   background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01.png");
   height: 700px;
   width: 100%;
+  position: relative;
 }
 .customSlide2 {
   background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01_2.png");
