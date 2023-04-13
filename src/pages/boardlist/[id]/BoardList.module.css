@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
