@@ -3,8 +3,6 @@ import style from "./StockInfo.module.css";
 import DateCp from "../common/DateCp";
 
 const StockTwo = ({ title, data1 }: any) => {
-  console.log("data1=", data1);
-
   return (
     <div className={style.tab1}>
       <div className={style.box}>

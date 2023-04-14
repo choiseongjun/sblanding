@@ -28,7 +28,7 @@ const StockInfo = () => {
   return (
     <div className={style.container}>
       {data1.length > 0 && <StockOne title="오늘의 테마종목" data1={data1} />}
-      {data1.length > 0 && <StockTwo title="고객후기" data1={boards} />}
+      {data1.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
       {/* <StockOne title="공모주 상장일정" /> */}
     </div>
   );
