@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .customSlide1 {
   background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01.png");
   height: 700px;

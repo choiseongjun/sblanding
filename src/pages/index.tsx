@@ -6,6 +6,7 @@ import Board from "@/components/board/Board";
 import Footer from "@/components/footer/Footer";
 import axios from "axios";
 import { useState } from "react";
+import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
 
 export default function Home() {
@@ -18,10 +19,12 @@ export default function Home() {
       </Head>
       <main style={{ backgroundColor: "#fff" }}>
         <Navigation />
+        <FBanner />
         <SeSlider />
         <SecondInfo />
         <StockInfo />
         <Board />
+
         <Footer />
       </main>
     </>
