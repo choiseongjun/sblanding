@@ -3,6 +3,8 @@ import style from "./StockInfo.module.css";
 import DateCp from "../common/DateCp";
 
 const StockTwo = ({ title, data1 }: any) => {
+  console.log("data1=", data1);
+
   return (
     <div className={style.tab1}>
       <div className={style.box}>
@@ -21,29 +23,32 @@ const StockTwo = ({ title, data1 }: any) => {
               <th className={style.thCenter} scope="col">
                 제목
               </th>
-              <th className={style.thCenter} scope="col">
-                작성자
-              </th>
+
               <th className={style.thCenter} scope="col">
                 작성일자
               </th>
             </tr>
           </thead>
           <tbody className="thead-light">
-            <tr>
-              <td>
-                <div className={style.tdBox}>
-                  {/* {item.firstTxt.substr(0, 1)} */}
-                  고객후기123123123123123
-                </div>
-              </td>
-              <td>
-                <div>작성자1123</div>
-              </td>
-              <td>
-                <div>2023-04-14</div>
-              </td>
-            </tr>
+            {data1.map((item: any, idx: number) => (
+              <tr key={idx}>
+                <td>
+                  <div className={style.tdBox}>
+                    {/* {item.firstTxt.substr(0, 1)} */}
+                    {item.title}
+                  </div>
+                </td>
+                {/* <td>
+                  <div>작성자1123</div>
+                </td> */}
+                <td>
+                  <div>
+                    {item.createdDate.substr(0, 10)}
+                    {item.createdDate.substr(13, 10)}
+                  </div>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
