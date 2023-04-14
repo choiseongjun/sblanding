@@ -26,6 +26,10 @@
 .badge-success {
   margin-right: 10px;
 }
+.tdBox {
+  display: flex;
+  align-items: center;
+}
 .tdBox > span {
   margin-right: 10px;
 }
@@ -37,7 +41,17 @@
 }
 .thCenter {
   text-align: center;
-  width: 33.3%;
+
+  /* width: 33.3%; */
+}
+.thCenter:nth-child(1) {
+  width: 60%;
+}
+.thCenter:nth-child(2) {
+  width: 20%;
+}
+.thCenter:nth-child(3) {
+  width: 20%;
 }
 .elipsis {
   color: #013472;
@@ -52,7 +66,7 @@
   background-color: #28a745;
 }
 @media (max-width: 675px) {
-  .box{
-    height:auto;
+  .box {
+    height: auto;
   }
 }

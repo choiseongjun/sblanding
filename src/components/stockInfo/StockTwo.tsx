@@ -19,49 +19,31 @@ const StockTwo = ({ title, data1 }: any) => {
           <thead className="thead-dark">
             <tr>
               <th className={style.thCenter} scope="col">
-                테마
+                제목
               </th>
               <th className={style.thCenter} scope="col">
-                주도주1위
+                작성자
               </th>
               <th className={style.thCenter} scope="col">
-                주도주2위
+                작성일자
               </th>
             </tr>
           </thead>
           <tbody className="thead-light">
-            {data1.length > 0 &&
-              data1
-                .filter((item: any) => item.gubun === "2")
-                .map((item: any, idx: number) => (
-                  <tr key={idx}>
-                    <td>
-                      <div className={style.tdBox}>
-                        {/* {item.firstTxt.substr(0, 1)} */}
-
-                        {item.firstTxt.substr(1, 99)}
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <span className={style.boxI}>
-                          {item.secondTxt.substr(0, 1)}
-                        </span>
-                        <span style={{ paddingLeft: 20 }}>
-                          {item.secondTxt.substr(1, 20)}
-                        </span>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <div className={style.elipsis}>
-                          {item.thirdTxt.split("\n")[1]}
-                        </div>
-                        <span>{item.thirdTxt.split("\n")[0]}</span>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
+            <tr>
+              <td>
+                <div className={style.tdBox}>
+                  {/* {item.firstTxt.substr(0, 1)} */}
+                  고객후기123123123123123
+                </div>
+              </td>
+              <td>
+                <div>작성자1123</div>
+              </td>
+              <td>
+                <div>2023-04-14</div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
