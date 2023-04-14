@@ -49,7 +49,10 @@ const StockOne = ({ title, data1 }: any) => {
                           {item.secondTxt.split("\n")[1]}
                         </div>
                         <span style={{ color: "red", paddingRight: 20 }}>
-                          <i className="fa fa-long-arrow-up"></i>
+                          <i
+                            style={{ paddingRight: 10 }}
+                            className="fa fa-long-arrow-up"
+                          ></i>
                           {item.secondTxt.split("\n")[0]}
                         </span>
                       </div>
@@ -60,7 +63,10 @@ const StockOne = ({ title, data1 }: any) => {
                           {item.thirdTxt.split("\n")[1]}
                         </div>
                         <span style={{ color: "red", paddingRight: 20 }}>
-                          <i className="fa fa-long-arrow-up"></i>
+                          <i
+                            style={{ paddingRight: 10 }}
+                            className="fa fa-long-arrow-up"
+                          ></i>
                           {item.thirdTxt.split("\n")[0]}
                         </span>
                       </div>

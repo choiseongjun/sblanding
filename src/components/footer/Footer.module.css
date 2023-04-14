@@ -10,9 +10,11 @@
   height: 500px;
   /* background-color: red; */
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
   color: #fff;
 }
 .innerContainer > div {
   margin-top: 20px;
+  cursor: pointer;
 }

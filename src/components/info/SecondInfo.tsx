@@ -17,12 +17,8 @@ const SecondInfo = () => {
     getIncreaseStock();
   }, []);
   return (
-    <div
-      className={styles.container}
-    >
-      <div
-        className={styles.box}
-      >
+    <div className={styles.container}>
+      <div className={styles.box}>
         <div className={styles.boxWrapper}>
           <div
             style={{
@@ -58,9 +54,7 @@ const SecondInfo = () => {
                 .filter((item: any) => item.gubun == "1")
                 .map((item: any, idx: number) => (
                   <div key={idx} className={styles.content}>
-                    <div
-                      className={styles.contentBox}
-                    >
+                    <div className={styles.contentBox}>
                       <div
                         style={{
                           color: "#013472",
@@ -70,7 +64,10 @@ const SecondInfo = () => {
                         {item.name}
                       </div>
                       <span style={{ color: "red" }}>
-                        <i className="fa fa-long-arrow-up"></i>
+                        <i
+                          style={{ paddingRight: 10 }}
+                          className="fa fa-long-arrow-up"
+                        ></i>
                         {item.name2}
                       </span>
                     </div>
