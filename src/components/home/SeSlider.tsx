@@ -83,9 +83,9 @@ const SeSlider = () => {
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
-                  <div>매일 2종목에 분산투자하여</div>
+                  <div>고점과 저점을 파악하여 알려주는</div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
-                    리스크를 줄여보세요.
+                    주식차트 알리미
                   </div>
                 </div>
                 <div className={style.cir2Box}>
