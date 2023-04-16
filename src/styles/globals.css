@@ -16,9 +16,10 @@ body {
   position: relative;
 }
 .customSlide3 {
-  background-image: url("https://www.kokstock.com/images/renewal/main/vis3_img1.png");
-  height: 700px;
+  background-image: url("/static/images/main3.jpeg");
+  height: 1200px;
   width: 100%;
+  background-size: cover;
 }
 .slick-slide {
   background-color: rgba(0, 0, 0, 0.9);

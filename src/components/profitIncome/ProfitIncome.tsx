@@ -8,7 +8,7 @@ const ProfitIncome = () => {
   }, 2000);
 
   return (
-    <div className={style.container}>
+    <div id="hugi" className={style.container}>
       <div
         style={{
           display: "flex",

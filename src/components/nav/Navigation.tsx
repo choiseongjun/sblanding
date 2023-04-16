@@ -8,7 +8,18 @@ const Navigation = () => {
       <div className={style.box}>
         <div>SB GLOBAL</div>
         <div className={style.rightBox}>
-          <div>홈</div>
+          <div>
+            {" "}
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={100}
+            >
+              홈
+            </Link>
+          </div>
           <div>회사소개</div>
           <div>
             <a
@@ -27,7 +38,7 @@ const Navigation = () => {
               spy={true}
               smooth={true}
               duration={100}
-              offset={-250}
+              offset={-150}
             >
               후기
             </Link>

@@ -4,7 +4,7 @@ import DateCp from "../common/DateCp";
 
 const StockTwo = ({ title, data1 }: any) => {
   return (
-    <div id="hugi" className={style.tab1}>
+    <div className={style.tab1}>
       <div className={style.box}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <h2 className={style.Title}>

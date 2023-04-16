@@ -105,14 +105,14 @@ const SeSlider = () => {
       <div>
         <div>
           <div className="customSlide3">
-            <img
+            {/* <img
               style={{ position: "absolute", bottom: -200, left: 60 }}
               src="https://www.kokstock.com/images/renewal/main/vis3_img2.png"
             />
             <img
               style={{ position: "absolute", bottom: -230, left: 1300 }}
               src="https://www.kokstock.com/images/renewal/main/vis3_img3.png"
-            />
+            /> */}
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
