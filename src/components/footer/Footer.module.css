@@ -29,3 +29,11 @@
 .company div {
   margin-top: 20px;
 }
+@media (max-width: 675px) {
+  .company {
+    margin-left: 0px;
+  }
+  .innerContainer {
+    margin-left: 50px;
+  }
+}

@@ -87,4 +87,7 @@
   .tdSecond span {
     padding-right: 0px !important;
   }
+  .imgCenter img {
+    width: 100%;
+  }
 }
