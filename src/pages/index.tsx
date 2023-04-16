@@ -9,6 +9,7 @@ import { useState } from "react";
 import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
 import ProfitIncome from "@/components/profitIncome/ProfitIncome";
+import QuntApply from "@/components/stockInfo/QuntApply";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Navigation />
         <FBanner />
         <SeSlider />
+        <QuntApply />
         <SecondInfo />
         <ProfitIncome />
 

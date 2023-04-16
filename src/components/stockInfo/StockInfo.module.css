@@ -65,6 +65,11 @@
   color: #fff;
   background-color: #28a745;
 }
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
 @media (max-width: 675px) {
   .box {
     height: auto;
