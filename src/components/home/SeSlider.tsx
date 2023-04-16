@@ -52,9 +52,8 @@ const SeSlider = () => {
                 주식종목 추천서비스
               </div>
             </div>
-            
+
             <div className={style.cir_tx}>
-        
               <div className={style.cir}>
                 <div>
                   <span className={style.orange}>콕!</span> 짚어서{" "}
@@ -64,7 +63,8 @@ const SeSlider = () => {
                 <img
                   className={style.robot}
                   // style={{ position: "absolute", bottom: -180, left: "-15%" }}
-                  src="https://www.kokstock.com/images/renewal/main/hand2.png"
+                  // src="/static/images/main1.png"
+                  // src="https://www.kokstock.com/images/renewal/main/hand2.png"
                 />
               </div>
               <div className={style.cir}>
@@ -80,25 +80,21 @@ const SeSlider = () => {
       <div>
         <div>
           <div className="customSlide2">
-        
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
                   <div>매일 2종목에 분산투자하여</div>
-                  <div style={{textAlign:'center'}} className={style.orange}>리스크를 줄여보세요.</div>
+                  <div style={{ textAlign: "center" }} className={style.orange}>
+                    리스크를 줄여보세요.
+                  </div>
                 </div>
                 <div className={style.cir2Box}>
                   <div className={style.cir2}>
-                    <div>
-                      1호 2호
-                    </div>
-                  2종목에 분산 투자!!
+                    <div>1호 2호</div>
+                    2종목에 분산 투자!!
                   </div>
                   <div className={style.cir2}>
-                    <div>
-                     2주 무료체험 신청하기
-                    </div>
-                   
+                    <div>2주 무료체험 신청하기</div>
                   </div>
                 </div>
               </div>

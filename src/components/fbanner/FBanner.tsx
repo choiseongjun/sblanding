@@ -14,7 +14,7 @@ const FBanner = () => {
             </Form.Group>
             <div className={style.boxInput2}>
               <Form.Select
-                className="custom-select custom-select-lg "
+                className="custom-select custom-select-lg ."
                 aria-label="Default select example"
               >
                 <option value="010">010</option>

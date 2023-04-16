@@ -20,7 +20,18 @@ const Navigation = () => {
               서비스 신청하기
             </a>
           </div>
-          <div>후기</div>
+          <div>
+            <Link
+              activeClass="active"
+              to="hugi"
+              spy={true}
+              smooth={true}
+              duration={100}
+              offset={-250}
+            >
+              후기
+            </Link>
+          </div>
           <div>
             <Link
               activeClass="active"

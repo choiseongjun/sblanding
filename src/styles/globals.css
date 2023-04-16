@@ -2,15 +2,18 @@ body {
   overflow-x: hidden;
 }
 .customSlide1 {
-  background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01.png");
-  height: 700px;
+  /* background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01.png"); */
+  background-image: url("/static/images/main1.jpeg");
+  height: 1200px;
   width: 100%;
   position: relative;
+  background-size: cover;
 }
 .customSlide2 {
-  background-image: url("https://www.kokstock.com/images/renewal/main/main_vis01_2.png");
-  height: 700px;
-  width: 100%;
+  background-image: url("/static/images/main2.jpeg");
+  height: 1200px;
+  background-size: cover;
+  position: relative;
 }
 .customSlide3 {
   background-image: url("https://www.kokstock.com/images/renewal/main/vis3_img1.png");

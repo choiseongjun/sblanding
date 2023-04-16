@@ -20,6 +20,7 @@
 .rightBox {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 675px) {
   .container {
