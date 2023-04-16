@@ -1,0 +1,10 @@
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .imgCenter img {
+    width: 100%;
+  }
+}

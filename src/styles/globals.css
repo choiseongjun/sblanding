@@ -93,6 +93,14 @@ th {
 .customSlide3 {
   position: relative;
 }
+.slick-dots li.slick-active button:before {
+  color: #881798;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #881798;
+}
 @media (max-width: 575px) {
   body {
     margin: 0;
