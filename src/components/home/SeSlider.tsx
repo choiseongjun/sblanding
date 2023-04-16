@@ -59,7 +59,7 @@ const SeSlider = () => {
                   <span className={style.orange}>콕!</span> 짚어서{" "}
                   <span className={style.orange}>톡!</span>
                 </div>
-                <div>상승할 종목을 콕 짚어드립니다.</div>
+                <div>상승할 종목을 추천해드립니다.</div>
                 <img
                   className={style.robot}
                   // style={{ position: "absolute", bottom: -180, left: "-15%" }}
