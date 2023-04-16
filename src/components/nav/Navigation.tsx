@@ -28,7 +28,7 @@ const Navigation = () => {
                 window.open("https://sbstock.kr/", "_blank");
               }}
             >
-              서비스 신청하기
+              무료상담 신청하기
             </a>
           </div>
           <div>
@@ -40,7 +40,7 @@ const Navigation = () => {
               duration={100}
               offset={-150}
             >
-              후기
+              수익률 인증
             </Link>
           </div>
           <div>
