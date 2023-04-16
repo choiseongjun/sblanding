@@ -69,4 +69,17 @@
   .box {
     height: auto;
   }
+  .thCenter:nth-child(1) {
+    width: 20%;
+  }
+  .tdBox {
+    font-size: 14px;
+  }
+  .tdSecond {
+    font-size: 12px;
+    display: block;
+  }
+  .tdSecond span {
+    padding-right: 0px !important;
+  }
 }
