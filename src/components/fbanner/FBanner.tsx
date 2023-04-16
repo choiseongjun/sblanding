@@ -13,7 +13,10 @@ const FBanner = () => {
               <Form.Control type="email" placeholder="이름" />
             </Form.Group>
             <div className={style.boxInput2}>
-              <Form.Select aria-label="Default select example">
+              <Form.Select
+                className="custom-select custom-select-lg "
+                aria-label="Default select example"
+              >
                 <option value="010">010</option>
               </Form.Select>
               <Form.Group className="" controlId="formBasic">

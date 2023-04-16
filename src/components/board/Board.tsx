@@ -21,7 +21,7 @@ const Board = () => {
     getQnA();
   }, []);
   return (
-    <div className={style.container}>
+    <div id="qna" className={style.container}>
       <div className={style.board}>
         <BoardList title={"공지사항"} data={notice} />
         <BoardList title={"자주묻는질문"} data={qna} />

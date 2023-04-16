@@ -8,6 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
+import ProfitIncome from "@/components/profitIncome/ProfitIncome";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
         <FBanner />
         <SeSlider />
         <SecondInfo />
+        <ProfitIncome />
+
         <StockInfo />
         <Board />
 
