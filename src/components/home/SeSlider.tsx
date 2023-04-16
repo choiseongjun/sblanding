@@ -90,8 +90,8 @@ const SeSlider = () => {
                 </div>
                 <div className={style.cir2Box}>
                   <div className={style.cir2}>
-                    <div>1호 2호</div>
-                    2종목에 분산 투자!!
+                    <div>잊기쉬운 타점을</div>
+                    알림으로 미리 대응!!
                   </div>
                   <div className={style.cir2}>
                     <div>2주 무료체험 신청하기</div>
