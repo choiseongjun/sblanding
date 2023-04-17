@@ -136,7 +136,7 @@ const SeSlider = () => {
                 <div className={style.tx2_title}>
                   <div style={{ textAlign: "center" }}>고객들의 <div>눈높이에 맞춰</div></div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
-                    진행되는 <div>솔루션 알리미</div>
+                    진행되는 <div>솔루션</div>
                   </div>
                 </div>
                 <div className={style.cir2Box}>
