@@ -108,4 +108,8 @@ th {
   }
   .customSlide1 {
   }
+  .react-responsive-modal-modal {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
 }

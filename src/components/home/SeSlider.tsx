@@ -4,6 +4,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./SeSlider.module.css";
+import Link from "next/link";
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -56,10 +57,11 @@ const SeSlider = () => {
             <div className={style.cir_tx}>
               <div className={style.cir}>
                 <div>
-                  <div>이번년도 봐야할 
-                  <span className={style.orange}>섹터는</span> </div>
-                  이미{" "}
-                  <span className={style.orange}>정해져있다!</span>
+                  <div>
+                    이번년도 봐야할
+                    <span className={style.orange}>섹터는</span>{" "}
+                  </div>
+                  이미 <span className={style.orange}>정해져있다!</span>
                 </div>
                 <div>상승할 종목을 추천해드립니다.</div>
                 <img
@@ -73,7 +75,7 @@ const SeSlider = () => {
                 <div>
                   합리적인 <span className={style.orange}>가격</span>
                 </div>
-                 <div> 담당자와 상담 (VAT별도)</div>
+                <div> 담당자와 상담 (VAT별도)</div>
               </div>
             </div>
           </div>
@@ -96,7 +98,16 @@ const SeSlider = () => {
                     알림으로 미리 대응!!
                   </div>
                   <div className={style.cir2}>
-                    <div>2주 무료체험 신청하기</div>
+                    <div>
+                      <a
+                        href="#"
+                        onClick={() => {
+                          window.open("https://sbstock.kr/", "_blank");
+                        }}
+                      >
+                        2주 무료체험 신청하기
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,15 +145,24 @@ const SeSlider = () => {
                     </div>
                   </div>
                   <div className={style.cir2}>
-                    <div>
-                      1개월 <span> 체험</span>
-                    </div>
-                    <div>
-                      <span className="vat">(VAT별도)</span>
-                    </div>
-                    <div>
-                      자세히보기 <i className="fa fa-arrow-right"></i>
-                    </div>
+                    <a
+                      href="#"
+                      style={{ color: "#fff" }}
+                      onClick={() => {
+                        window.open("https://sbstock.kr/", "_blank");
+                      }}
+                    >
+                      <div>
+                        1개월 <span> 체험</span>
+                      </div>
+
+                      <div>
+                        <span className="vat">(VAT별도)</span>
+                      </div>
+                      <div>
+                        자세히보기 <i className="fa fa-arrow-right"></i>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

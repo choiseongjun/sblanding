@@ -55,6 +55,11 @@
   border: 2px solid #ccc;
   margin-right: 20px;
   text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .tx2_title div {
   font-size: 50px;
@@ -89,5 +94,12 @@
   .cir {
     margin-top: 30px;
     width: 100%;
+    font-size: 13px;
+  }
+  .cir span {
+    font-size: 13px;
+  }
+  .cir2 {
+    font-size: 13px;
   }
 }

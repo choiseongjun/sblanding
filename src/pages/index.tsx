@@ -5,7 +5,7 @@ import StockInfo from "@/components/stockInfo/StockInfo";
 import Board from "@/components/board/Board";
 import Footer from "@/components/footer/Footer";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
 import ProfitIncome from "@/components/profitIncome/ProfitIncome";
@@ -14,10 +14,30 @@ import Intro from "@/components/Intro/Intro";
 import { isMobile, isDesktop } from "react-device-detect";
 
 import React from "react";
+import ProfitIncome2 from "@/components/profitIncome/ProfitIncome2";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import StockTwo from "@/components/stockInfo/StockTwo";
+import Ticker, { FinancialTicker, NewsTicker } from "nice-react-ticker";
+
+// import Ltinker from "@/components/tinker/Ltinker";
 const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
 const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
 
 export default function Home() {
+  const [open, setOpen] = useState(true);
+  const [boards, setBoards] = useState([]);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+  const getBoard = () => {
+    axios.get("/v1/board/3/latest").then((res) => {
+      setBoards(res.data);
+    });
+  };
+  useEffect(() => {
+    getBoard();
+  }, []);
   return (
     <>
       <Head>
@@ -27,12 +47,31 @@ export default function Home() {
       </Head>
       <main id="home" style={{ backgroundColor: "#fff" }}>
         <Navigation />
-
+        <Modal open={open} onClose={onCloseModal} center>
+          <div>
+            <img src="/static/images/notice.jpeg"></img>
+            <button
+              style={{
+                position: "absolute",
+                bottom: "2%",
+                right: "36%",
+                backgroundColor: "#000",
+                color: "orange",
+                padding: 15,
+              }}
+            >
+              1:1 카톡 상담가능{" "}
+            </button>
+          </div>
+        </Modal>
         <FBanner />
         <SeSlider />
+        {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
+        <ProfitIncome />
+        <ProfitIncome2 />
+
         <Intro />
         <SecondInfo />
-        <ProfitIncome />
 
         <StockInfo />
         <Board />

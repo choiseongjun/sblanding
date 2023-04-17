@@ -3,7 +3,7 @@ import style from "./intro.module.css";
 
 const Intro = () => {
   return (
-    <div className={style.imgCenter}>
+    <div id={"companyIntro"} className={style.imgCenter}>
       <img src="/static/images/intro.jpeg" />
     </div>
   );

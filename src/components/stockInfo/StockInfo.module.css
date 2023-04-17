@@ -4,6 +4,7 @@
 .tab1 {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 .box {
   padding: 2%;

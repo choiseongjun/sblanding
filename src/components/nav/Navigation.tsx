@@ -20,7 +20,18 @@ const Navigation = () => {
               홈
             </Link>
           </div>
-          <div>회사소개</div>
+          <div>
+            <Link
+              activeClass="active"
+              to="companyIntro"
+              spy={true}
+              smooth={true}
+              duration={100}
+              offset={-50}
+            >
+              회사소개
+            </Link>
+          </div>
           <div>
             <a
               href="#"
