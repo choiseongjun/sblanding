@@ -56,8 +56,9 @@ const SeSlider = () => {
             <div className={style.cir_tx}>
               <div className={style.cir}>
                 <div>
-                  이번년도 봐야할 
-                  <span className={style.orange}>섹터는</span> 이미{" "}
+                  <div>이번년도 봐야할 
+                  <span className={style.orange}>섹터는</span> </div>
+                  이미{" "}
                   <span className={style.orange}>정해져있다!</span>
                 </div>
                 <div>상승할 종목을 추천해드립니다.</div>
@@ -72,7 +73,7 @@ const SeSlider = () => {
                 <div>
                   합리적인 <span className={style.orange}>가격</span>
                 </div>
-                <div>월 2만원 (VAT별도)</div>
+                 <div>월 2만원 (VAT별도)</div>
               </div>
             </div>
           </div>
