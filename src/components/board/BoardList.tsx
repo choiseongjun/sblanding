@@ -24,7 +24,7 @@ const BoardList = ({ title, data }: any) => {
           {data.map((item: any, idx: number) => (
             <>
               <tr key={idx}>
-                <Link href={"/boardlist/1"}>
+                <Link href={`/boardDetail/${item.id}`}>
                   <td className={style.listCenter}>
                     <CDateCp date="2023-04-06" />
                     {item.title}
