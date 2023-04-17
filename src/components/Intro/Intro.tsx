@@ -4,7 +4,7 @@ import style from "./intro.module.css";
 const Intro = () => {
   return (
     <div className={style.imgCenter}>
-      <img src="/static/images/intro.png" />
+      <img src="/static/images/intro.jpeg" />
     </div>
   );
 };
