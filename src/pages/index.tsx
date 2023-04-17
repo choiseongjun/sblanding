@@ -50,18 +50,25 @@ export default function Home() {
         <Modal open={open} onClose={onCloseModal} center>
           <div>
             <img src="/static/images/notice.jpeg"></img>
-            <button
-              style={{
-                position: "absolute",
-                bottom: "2%",
-                right: "36%",
-                backgroundColor: "#000",
-                color: "orange",
-                padding: 15,
+            <a
+              href="#"
+              onClick={() => {
+                window.open("https://open.kakao.com/me/shon04Se", "_blank");
               }}
             >
-              1:1 카톡 상담가능{" "}
-            </button>
+              <button
+                style={{
+                  position: "absolute",
+                  bottom: "2%",
+                  right: "36%",
+                  backgroundColor: "#000",
+                  color: "orange",
+                  padding: 15,
+                }}
+              >
+                1:1 카톡 상담가능{" "}
+              </button>
+            </a>
           </div>
         </Modal>
         <FBanner />
