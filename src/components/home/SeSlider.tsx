@@ -113,7 +113,7 @@ const SeSlider = () => {
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
-                  <div> 담당자와 상담 (VAT별도)</div>
+                  <div> 담당자와 상담 </div>
                 </div>
               </div>
             </div>
@@ -134,9 +134,9 @@ const SeSlider = () => {
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
-                  <div style={{ textAlign: "center" }}>빠른 대응이 가능한</div>
+                  <div style={{ textAlign: "center" }}>고객들의 <div>눈높이에 맞춰</div></div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
-                    중급자를 위한 솔루션
+                    진행되는 <div>솔루션 알리미</div>
                   </div>
                 </div>
                 <div className={style.cir2Box}>
@@ -160,12 +160,12 @@ const SeSlider = () => {
                       }}
                     >
                       <div>
-                        1개월 <span> 체험</span>
+                        2주간 <span> 체험</span>
                       </div>
 
-                      <div>
+                      {/* <div>
                         <span className="vat">(VAT별도)</span>
-                      </div>
+                      </div> */}
                       <div>
                         자세히보기 <i className="fa fa-arrow-right"></i>
                       </div>
