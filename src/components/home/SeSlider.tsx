@@ -33,7 +33,7 @@ const SeSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 3000,
 
     // nextArrow: <SampleNextArrow />,
     // prevArrow: <SamplePrevArrow />,
@@ -73,7 +73,7 @@ const SeSlider = () => {
                 <div>
                   합리적인 <span className={style.orange}>가격</span>
                 </div>
-                 <div>월 2만원 (VAT별도)</div>
+                 <div> 담당자와 상담 (VAT별도)</div>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const SeSlider = () => {
                   </div>
                   <div className={style.cir2}>
                     <div>
-                      1개월 <span>2만원</span>
+                      1개월 <span> 체험</span>
                     </div>
                     <div>
                       <span className="vat">(VAT별도)</span>
