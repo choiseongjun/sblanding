@@ -10,7 +10,7 @@ const ProfitIncome2 = () => {
           alignItems: "center",
         }}
       >
-        <h2 className={style.Title}>
+        <h2 style={{ marginTop: 25, marginBottom: 25 }} className={style.Title}>
           {/* 오늘의 <strong>테마</strong>종목 */}
           <strong>실고객 카톡 후기</strong>
         </h2>
