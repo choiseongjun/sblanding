@@ -62,17 +62,42 @@
     display: block;
   }
   .boxInputContainer {
-    display: block;
+    /* display: block; */
   }
   .containerM .box {
     display: block;
   }
   .boxInput2 {
-    display: block;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
   }
+  .formInput {
+    width: 60%;
+
+    display: flex;
+  }
+  .formInput > div {
+    margin-right: 20px;
+  }
+  .boxInput2 > select {
+    width: 20%;
+  }
+  .chkLinear {
+    width: 100%;
+  }
+  .chkTitle {
+    color: #fff;
+    margin-right: 10px;
+  }
+  /* .boxInput2 input {
+    width: 60%;
+  } */
   .consulting {
     display: flex;
     justify-content: center;
     padding-right: 25px;
+    margin-top: 15px;
   }
 }
