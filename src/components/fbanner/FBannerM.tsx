@@ -33,8 +33,9 @@ const FBanner = () => {
         <div>
           <div>
             <div className={style.boxInput}>
-              <Form.Group className="" controlId="formBasic">
+              <Form.Group className={style.emailBox} controlId="formBasic">
                 <Form.Control
+                  className={style.email}
                   type="email"
                   placeholder="이름"
                   onChange={(e) => setUserName(e.target.value)}

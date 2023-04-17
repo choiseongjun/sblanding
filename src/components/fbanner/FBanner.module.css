@@ -75,6 +75,7 @@
     display: flex;
     justify-content: flex-start;
     width: auto;
+    margin-bottom: 10px;
   }
   .formInput {
     width: 60%;
@@ -102,5 +103,13 @@
     justify-content: center;
     padding-right: 25px;
     margin-top: 15px;
+  }
+  .email {
+    width: 50%;
+  }
+  .emailBox {
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
   }
 }
