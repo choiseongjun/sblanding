@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "./FBanner.module.css";
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FormCheck } from "react-bootstrap";
 import TelegramApi from "node-telegram-api";
@@ -27,7 +26,7 @@ const FBanner = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
   return (
-    <div className={style.container}>
+    <div className={style.containerM}>
       <div className={style.box}>
         <img className={style.best} src="/static/images/best.png" />
 
@@ -41,29 +40,27 @@ const FBanner = () => {
                   onChange={(e) => setUserName(e.target.value)}
                 />
               </Form.Group>
-              <div className={style.boxInputContainer}>
-                <div className={style.boxInput2}>
-                  <Form.Select
-                    className="custom-select custom-select-lg ."
-                    aria-label="Default select example"
-                  >
-                    <option value="010">010</option>
-                  </Form.Select>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                      onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text"
-                      placeholder="0000"
-                    />
-                  </Form.Group>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                      type="text"
-                      placeholder="0000"
-                    />
-                  </Form.Group>
-                </div>
+              <div className={style.boxInput2}>
+                <Form.Select
+                  className="custom-select custom-select-lg ."
+                  aria-label="Default select example"
+                >
+                  <option value="010">010</option>
+                </Form.Select>
+                <Form.Group className="" controlId="formBasic">
+                  <Form.Control
+                    onChange={(e) => setPhoneNumber1(e.target.value)}
+                    type="text"
+                    placeholder="0000"
+                  />
+                </Form.Group>
+                <Form.Group className="" controlId="formBasic">
+                  <Form.Control
+                    onChange={(e) => setPhoneNumber2(e.target.value)}
+                    type="text"
+                    placeholder="0000"
+                  />
+                </Form.Group>
               </div>
             </div>
           </div>

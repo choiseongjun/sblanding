@@ -6,8 +6,8 @@ const CDateCp = ({ date }: any) => {
       style={{
         marginLeft: 20,
         marginRight: 10,
-        height: 18,
-        width: 80,
+        height: "auto",
+        width: "auto",
         backgroundColor: "#6c757d",
         display: "flex",
         justifyContent: "center",
@@ -16,6 +16,7 @@ const CDateCp = ({ date }: any) => {
         color: "#fff",
         fontSize: 12,
         fontWeight: "400",
+        padding: "5px 10px",
       }}
     >
       {date}

@@ -6,11 +6,16 @@ import Board from "@/components/board/Board";
 import Footer from "@/components/footer/Footer";
 import axios from "axios";
 import { useState } from "react";
-import FBanner from "@/components/fbanner/FBanner";
+// import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
 import ProfitIncome from "@/components/profitIncome/ProfitIncome";
 import QuntApply from "@/components/stockInfo/QuntApply";
 import Intro from "@/components/Intro/Intro";
+import { isMobile, isDesktop } from "react-device-detect";
+
+import React from "react";
+const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
+const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
 
 export default function Home() {
   return (
@@ -22,6 +27,7 @@ export default function Home() {
       </Head>
       <main id="home" style={{ backgroundColor: "#fff" }}>
         <Navigation />
+
         <FBanner />
         <SeSlider />
         <Intro />
@@ -30,6 +36,8 @@ export default function Home() {
 
         <StockInfo />
         <Board />
+
+        <FBannerM />
 
         <Footer />
       </main>
