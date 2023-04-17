@@ -44,50 +44,12 @@ const SeSlider = () => {
       <div>
         <div>
           <div className="customSlide1">
-            <div className={style.mainCenter}>
-              <div className={style.mainTitle}>
-                <b className={style.orange}>초보</b>
-                <b className="fWhite">·</b>
-                <b className={style.orange}>직장인 투자자</b>를 위한
-                <br />
-                주식종목 추천서비스
-              </div>
-            </div>
-
-            <div className={style.cir_tx}>
-              <div className={style.cir}>
-                <div>
-                  <div>
-                    이번년도 봐야할
-                    <span className={style.orange}>섹터는</span>{" "}
-                  </div>
-                  이미 <span className={style.orange}>정해져있다!</span>
-                </div>
-                <div>상승할 종목을 추천해드립니다.</div>
-                <img
-                  className={style.robot}
-                  // style={{ position: "absolute", bottom: -180, left: "-15%" }}
-                  // src="/static/images/main1.png"
-                  // src="https://www.kokstock.com/images/renewal/main/hand2.png"
-                />
-              </div>
-              <div className={style.cir}>
-                <div>
-                  합리적인 <span className={style.orange}>가격</span>
-                </div>
-                <div> 담당자와 상담 (VAT별도)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div className="customSlide2">
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
-                  <div>고점과 저점을 파악하여 알려주는</div>
+                  <div style={{ textAlign: "center" }}>
+                    고점과 저점을 파악하여 알려주는
+                  </div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
                     주식차트 알리미
                   </div>
@@ -117,6 +79,49 @@ const SeSlider = () => {
       </div>
       <div>
         <div>
+          <div className="customSlide2">
+            <div>
+              <div className={style.mainCenter}>
+                <div className={style.mainTitle}>
+                  <b className={style.orange}>초보</b>
+                  <b className="fWhite">·</b>
+                  <b className={style.orange}>직장인 투자자</b>를 위한
+                  <br />
+                  주식종목 <br />
+                  추천서비스
+                </div>
+              </div>
+
+              <div className={style.cir_tx}>
+                <div className={style.cir}>
+                  <div>
+                    <div>
+                      이번년도 봐야할
+                      <span className={style.orange}>섹터는</span>{" "}
+                    </div>
+                    이미 <span className={style.orange}>정해져있다!</span>
+                  </div>
+                  <div>상승할 종목을 추천해드립니다.</div>
+                  <img
+                    className={style.robot}
+                    // style={{ position: "absolute", bottom: -180, left: "-15%" }}
+                    // src="/static/images/main1.png"
+                    // src="https://www.kokstock.com/images/renewal/main/hand2.png"
+                  />
+                </div>
+                <div className={style.cir}>
+                  <div>
+                    합리적인 <span className={style.orange}>가격</span>
+                  </div>
+                  <div> 담당자와 상담 (VAT별도)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
           <div className="customSlide3">
             {/* <img
               style={{ position: "absolute", bottom: -200, left: 60 }}
@@ -129,8 +134,10 @@ const SeSlider = () => {
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
-                  <div>장중 빠른 대응이 가능한</div>
-                  <div className={style.orange}>중급자를 위한 솔루션</div>
+                  <div style={{ textAlign: "center" }}>빠른 대응이 가능한</div>
+                  <div style={{ textAlign: "center" }} className={style.orange}>
+                    중급자를 위한 솔루션
+                  </div>
                 </div>
                 <div className={style.cir2Box}>
                   <div className={style.cir2}>
