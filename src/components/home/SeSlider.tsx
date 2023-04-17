@@ -56,8 +56,9 @@ const SeSlider = () => {
             <div className={style.cir_tx}>
               <div className={style.cir}>
                 <div>
-                  <span className={style.orange}>콕!</span> 짚어서{" "}
-                  <span className={style.orange}>톡!</span>
+                  이번년도 봐야할 
+                  <span className={style.orange}>섹터는</span> 이미{" "}
+                  <span className={style.orange}>정해져있다!</span>
                 </div>
                 <div>상승할 종목을 추천해드립니다.</div>
                 <img
