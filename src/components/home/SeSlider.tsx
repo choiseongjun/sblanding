@@ -48,7 +48,7 @@ const SeSlider = () => {
               <div className={style.cir_tx2}>
                 <div className={style.tx2_title}>
                   <div style={{ textAlign: "center" }}>
-                    고점과 저점을 파악하여 알려주는
+                    고점과 저점을 <div>파악하여 알려주는</div>
                   </div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
                     주식차트 알리미
