@@ -69,7 +69,7 @@ export default function Home() {
                       padding: 15,
                     }}
                   >
-                    1:1 카톡 상담가능{" "}
+                    1:1 카톡 상담하기{" "}
                   </button>
                 ) : (
                   <></>
