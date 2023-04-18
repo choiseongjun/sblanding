@@ -20,6 +20,7 @@
   color: #f39700;
 }
 .cir_tx {
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
