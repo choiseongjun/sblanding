@@ -64,7 +64,7 @@ const SeSlider = () => {
                       <a
                         href="#"
                         style={{ color: "#4c929a" }}
-                        style={{ backgroundColor:"#fff" }}
+                        
                         onClick={() => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
@@ -146,13 +146,13 @@ const SeSlider = () => {
                 <div className={style.cir2Box}>
                   <div className={style.cir2}>
                     <div>
-                      시가<span>·</span>종가매매
+                      단타<span>·</span>스윙
                     </div>
                     <div>
-                      장시작전 <span>10분</span>
+                      고객님들의 <span>투자성향</span>
                     </div>
                     <div>
-                      장마감전 <span>10분</span>
+                      프라이빗 <span>1:1컨설팅</span>
                     </div>
                   </div>
                   <div className={style.cir2}>
