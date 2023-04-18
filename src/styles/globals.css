@@ -113,4 +113,19 @@ th {
     margin: 0px !important;
     padding: 0px !important;
   }
+
+}
+@media (max-width: 575px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .customSlide1 {
+    background-image: url("/static/images/mMain2.jpeg");
+  }
+  .react-responsive-modal-modal {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
 }
