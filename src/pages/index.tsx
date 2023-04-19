@@ -60,12 +60,13 @@ export default function Home() {
                 {isDesktop ? (
                   <button
                     style={{
+                      
                       position: "absolute",
                       bottom: "2%",
                       right: "36%",
                       backgroundColor: "#000",
                       color: "yellow",
-                      padding: 20,
+                      padding: 15,
                     }}
                   >
                     1:1 카톡 상담하기{" "}
