@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./SeSlider.module.css";
 import Link from "next/link";
+import { blob } from "stream/consumers";
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -63,7 +64,7 @@ const SeSlider = () => {
                     <div>
                       <a
                         href="#"
-                        style={{ color: "#f0ab27" }}
+                        style={{ color: "#f0ab27", fontWeight: "bold" }}
                         onClick={() => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
