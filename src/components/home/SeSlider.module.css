@@ -26,6 +26,7 @@
   align-items: center;
   color: #fff;
   position: relative;
+  margin-top: 100px;
 }
 .cir {
   background-color: rgba(255, 255, 255, 0.607);
@@ -67,6 +68,7 @@
 }
 .cir2Box {
   display: flex;
+  margin-top: 100px;
 }
 @media (max-width: 1600px) {
   /* .robot{
