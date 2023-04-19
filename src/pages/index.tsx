@@ -64,8 +64,8 @@ export default function Home() {
                       bottom: "2%",
                       right: "36%",
                       backgroundColor: "#000",
-                      color: "orange",
-                      padding: 15,
+                      color: "yellow",
+                      padding: 20,
                     }}
                   >
                     1:1 카톡 상담하기{" "}
