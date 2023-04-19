@@ -3,12 +3,33 @@ import type { AppProps } from "next/app";
 import axios from "axios";
 import Head from "next/head";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({
+  Component,
+  pageProps,
+  title,
+  description,
+  url,
+  keyword,
+}: any) {
   axios.defaults.baseURL = "https://sbstock.co.kr/";
   // axios.defaults.baseURL = "http://localhost:8080"
   return (
     <>
       <Head>
+        <title>SB GLOBAL 투자그룹</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keyword} />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          property="og:title"
+          content={title ? title : "Fashion Style Map"}
+        />
+        <meta property="og:description" content={description} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={title} key="ogsitename" />
+        <meta property="og:article:author" content="FashionStyleMap" />
+        <meta property="og:url" content={url} key="ogurl" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -40,3 +61,11 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+App.getInitialProps = () => {
+  return {
+    title: "SB GLOBAL 투자그룹",
+    description: "SB GLOBAL 투자그룹.",
+    url: "https://sbglobalstock.co.kr/",
+    keyword: "투자,주식투자,주식,비트코인,선물,급등주,이차전,바이오",
+  };
+};

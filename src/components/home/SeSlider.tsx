@@ -63,8 +63,7 @@ const SeSlider = () => {
                     <div>
                       <a
                         href="#"
-                        style={{ color: "#f9ff59" }}
-                        
+                        style={{ color: "#f0ab27" }}
                         onClick={() => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
