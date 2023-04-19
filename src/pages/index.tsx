@@ -18,7 +18,6 @@ import ProfitIncome2 from "@/components/profitIncome/ProfitIncome2";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import StockTwo from "@/components/stockInfo/StockTwo";
-import Ticker, { FinancialTicker, NewsTicker } from "nice-react-ticker";
 
 // import Ltinker from "@/components/tinker/Ltinker";
 const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
