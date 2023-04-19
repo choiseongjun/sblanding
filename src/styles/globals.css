@@ -109,23 +109,28 @@ th {
   .customSlide1 {
     background-image: url("/static/images/mMain1.jpeg");
   }
+  .customSlide2 {
+    background-image: url("/static/images/mMain2.jpeg");
+  }
+  .customSlide3 {
+    background-image: url("/static/images/mMain3.jpeg");
+  }
+
   .react-responsive-modal-modal {
     margin: 0px !important;
     padding: 0px !important;
   }
-
 }
 @media (max-width: 575px) {
   body {
     margin: 0;
     overflow-x: hidden;
   }
-  .customSlide1 {
+  /* .customSlide1 {
     background-image: url("/static/images/mMain2.jpeg");
-  }
+  } */
   .react-responsive-modal-modal {
     margin: 0px !important;
     padding: 0px !important;
   }
-
 }
