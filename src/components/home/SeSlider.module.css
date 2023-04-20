@@ -50,11 +50,11 @@
   padding-top: 200px;
 }
 .cir2 {
-  background-color: rgba(255, 255, 255, 0.607);
+  background-color: rgba(255, 255, 255, 0.907);
   border-radius: 50px;
   width: 24vw;
   padding: 0.8vw;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(136, 165, 251);
   margin-right: 20px;
   text-align: center;
   font-size: 30px;
