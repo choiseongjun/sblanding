@@ -121,7 +121,7 @@ const SeSlider = () => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
                         >
-                        담당자와 상담하기
+                          ▶담당자와 상담하기
                         </a>
                     </div>
                 </div>
@@ -157,7 +157,10 @@ const SeSlider = () => {
                       단타<span>·</span>스윙
                     </div>
                     <div>
-                      고객님들의 <span>투자성향</span>
+                      고객님들의 
+                    </div>
+                    <div>
+                      투자성향
                     </div>
                     <div>
                       프라이빗 <span>1:1컨설팅</span>
@@ -166,7 +169,7 @@ const SeSlider = () => {
                   <div className={style.cir2}>
                     <a
                       href="#"
-                      style={{ color: "#f9ff59" }}
+                      style={{ color: style.orange }}
                       onClick={() => {
                         window.open("https://sbstock.kr/", "_blank");
                       }}
