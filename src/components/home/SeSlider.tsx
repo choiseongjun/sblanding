@@ -115,7 +115,15 @@ const SeSlider = () => {
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
-                  <div> 담당자와 상담 </div>
+                    <div> <a href="#"
+                        style={{ color: "#f0ab27", fontWeight: "bold" }}
+                        onClick={() => {
+                          window.open("https://sbstock.kr/", "_blank");
+                        }}
+                        >
+                        담당자와 상담하기
+                        </a>
+                    </div>
                 </div>
               </div>
             </div>
