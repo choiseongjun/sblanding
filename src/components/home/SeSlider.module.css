@@ -37,6 +37,9 @@
   margin-right: 20px;
   text-align: center;
   position: relative;
+  font-family: "Dongle";
+  font-weight: 700;
+  font-size: 35px;
 }
 .cir span {
   font-size: 30px;
@@ -49,6 +52,7 @@
   color: #7db2ca;
   padding-top: 200px;
 }
+
 .cir2 {
   background-color: rgba(255, 255, 255, 0.907);
   border-radius: 50px;
@@ -63,6 +67,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Dongle";
+  font-weight: 700;
 }
 .tx2_title div {
   font-size: 50px;
