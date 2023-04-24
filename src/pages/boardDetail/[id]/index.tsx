@@ -28,7 +28,7 @@ const Index = () => {
 
   return (
     <div className={style.container}>
-      <div style={{ width: "50%", marginTop: 50 }}>
+      <div style={{ marginTop: 50 }}>
         <InputGroup className="mb-3">
           <InputGroup.Text id="inputGroup-sizing-default">제목</InputGroup.Text>
           <Form.Control
