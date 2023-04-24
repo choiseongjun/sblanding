@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import style from "./SeSlider.module.css";
 import Link from "next/link";
 import { blob } from "stream/consumers";
@@ -34,29 +36,7 @@ const SeSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 320,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+
     // nextArrow: <SampleNextArrow />,
     // prevArrow: <SamplePrevArrow />,
   };
@@ -115,7 +95,7 @@ const SeSlider = () => {
               </div>
 
               <div className={style.cir_tx}>
-                <div className={style.cir}>
+                <div className={style.cir2}>
                   <div>
                     <div>
                       이번년도 봐야할
@@ -131,21 +111,19 @@ const SeSlider = () => {
                     // src="https://www.kokstock.com/images/renewal/main/hand2.png"
                   />
                 </div>
-                <div className={style.cir}>
+                <div className={style.cir2}>
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
-                  <div>
-                    <a
-                      href="#"
-                      style={{ color: "#f0ab27", fontWeight: "bold" }}
-                      onClick={() => {
-                        window.open("https://sbstock.kr/", "_blank");
-                      }}
-                    >
-                      ▶담당자와 상담하기
-                    </a>
-                  </div>
+                    <div> <a href="#"
+                        style={{ color: "#f0ab27", fontWeight: "bold" }}
+                        onClick={() => {
+                          window.open("https://sbstock.kr/", "_blank");
+                        }}
+                        >
+                          ▶담당자와 상담하기
+                        </a>
+                    </div>
                 </div>
               </div>
             </div>
@@ -178,8 +156,12 @@ const SeSlider = () => {
                     <div>
                       단타<span>·</span>스윙
                     </div>
-                    <div>고객님들의</div>
-                    <div>투자성향</div>
+                    <div>
+                      고객님들의 
+                    </div>
+                    <div>
+                      투자성향
+                    </div>
                     <div>
                       프라이빗 <span>1:1컨설팅</span>
                     </div>
