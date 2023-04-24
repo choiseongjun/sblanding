@@ -14,12 +14,19 @@ const VipSlide = () => {
       {
         breakpoint: 5000,
         settings: {
+          slidesToShow: 9,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1920,
+        settings: {
           slidesToShow: 7,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 900,
         settings: {
           slidesToShow: 7,
           slidesToScroll: 1,
@@ -63,13 +70,13 @@ const VipSlide = () => {
           <div className={style.sliderBox}>
             <div className={style.sliderTitle}>
               <div>이**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
           <div>
             <div className={style.sliderTitle}>
               <div>박**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
           <div className={style.sliderBox}>
@@ -87,7 +94,7 @@ const VipSlide = () => {
           <div>
             <div className={style.sliderTitle}>
               <div>박**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
           <div>
@@ -111,19 +118,19 @@ const VipSlide = () => {
           <div>
             <div className={style.sliderTitle}>
               <div>최**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
           <div>
             <div className={style.sliderTitle}>
               <div>성**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
           <div>
             <div className={style.sliderTitle}>
               <div>최**회원님</div>
-              <div className={style.joinComple}>가입완료</div>
+              <div className={style.joinComple}>신규등록</div>
             </div>
           </div>
         </Slider>
