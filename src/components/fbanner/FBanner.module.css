@@ -42,6 +42,7 @@
 }
 .chkLinear {
   display: flex;
+  margin-top: 20px;
 }
 .chkTitle {
   color: #fff;
