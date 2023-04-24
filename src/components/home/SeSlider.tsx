@@ -98,7 +98,8 @@ const SeSlider = () => {
                 <div className={style.cir2}>
                   <div>
                     <div>
-                      이번년도 봐야할
+                      이번년도 봐야할</div>
+                      <div>
                       <span className={style.orange}>섹터는</span>{" "}
                     </div>
                     이미 <span className={style.orange}>정해져있다!</span>
