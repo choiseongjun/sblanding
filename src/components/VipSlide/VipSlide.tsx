@@ -27,9 +27,9 @@ const VipSlide = () => {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1600,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 5,
           slidesToScroll: 1,
         },
       },
