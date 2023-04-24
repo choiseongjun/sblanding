@@ -23,7 +23,7 @@ import StockTwo from "@/components/stockInfo/StockTwo";
 const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
 const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
 
-export default function Home({ title, description, url, keyword }: Props) {
+export default function Home({ title, description, url, keyword }: any) {
   const [open, setOpen] = useState(true);
   const [boards, setBoards] = useState([]);
 
