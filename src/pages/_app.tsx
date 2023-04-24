@@ -31,10 +31,10 @@ export default function App({
         <meta property="og:article:author" content="FashionStyleMap" />
         <meta property="og:url" content={url} key="ogurl" />
         <link rel="icon" href="/favicon.ico" />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        />
+        /> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
