@@ -106,8 +106,11 @@ section {
 }
 body {
   line-height: 1;
-  font-family: "Black Hans Sans";
+  font-family: "Black Han Sans";
 }
+/* a {
+  font-family: "Black Hans Sans";
+} */
 h2 {
   font-size: 40px;
 }
