@@ -10,6 +10,7 @@
 }
 @media (max-width: 675px) {
   .container {
+    margin-top: 50px;
   }
   .container img {
     width: 100%;

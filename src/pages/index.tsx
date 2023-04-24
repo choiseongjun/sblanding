@@ -20,6 +20,7 @@ import { Modal } from "react-responsive-modal";
 import StockTwo from "@/components/stockInfo/StockTwo";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import VipSlide from "@/components/VipSlide/VipSlide";
 // import Ltinker from "@/components/tinker/Ltinker";
 const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
 const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
@@ -104,8 +105,10 @@ export default function Home({ title, description, url, keyword }: any) {
         )}
         <FBanner />
         <SeSlider />
+        <VipSlide />
         {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
         <ProfitIncome />
+
         <ProfitIncome2 />
 
         <Intro />
