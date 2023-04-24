@@ -136,7 +136,6 @@ const SeSlider = () => {
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
                   <div>
-                    {" "}
                     <a
                       href="#"
                       style={{ color: "#f0ab27", fontWeight: "bold" }}
