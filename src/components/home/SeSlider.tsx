@@ -34,7 +34,7 @@ const SeSlider = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
 
     // nextArrow: <SampleNextArrow />,
@@ -115,15 +115,18 @@ const SeSlider = () => {
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
-                    <div> <a href="#"
-                        style={{ color: "#f0ab27", fontWeight: "bold" }}
-                        onClick={() => {
-                          window.open("https://sbstock.kr/", "_blank");
-                        }}
-                        >
-                          ▶담당자와 상담하기
-                        </a>
-                    </div>
+                  <div>
+                    {" "}
+                    <a
+                      href="#"
+                      style={{ color: "#f0ab27", fontWeight: "bold" }}
+                      onClick={() => {
+                        window.open("https://sbstock.kr/", "_blank");
+                      }}
+                    >
+                      ▶담당자와 상담하기
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,12 +159,8 @@ const SeSlider = () => {
                     <div>
                       단타<span>·</span>스윙
                     </div>
-                    <div>
-                      고객님들의 
-                    </div>
-                    <div>
-                      투자성향
-                    </div>
+                    <div>고객님들의</div>
+                    <div>투자성향</div>
                     <div>
                       프라이빗 <span>1:1컨설팅</span>
                     </div>
