@@ -80,6 +80,7 @@
   }
   .box {
     display: block;
+    margin-left: 0px;
   }
   .vipSlider {
     margin-left: 0px;

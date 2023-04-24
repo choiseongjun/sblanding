@@ -75,6 +75,9 @@
   .box {
     height: auto;
   }
+  .tab1 {
+    margin-top: 50px;
+  }
   .thCenter:nth-child(1) {
     width: 20%;
   }

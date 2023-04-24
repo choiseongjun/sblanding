@@ -5,6 +5,7 @@ import { isMobile, isDesktop } from "react-device-detect";
 const VipSlide = () => {
   const settings1 = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
