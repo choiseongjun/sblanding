@@ -1,12 +1,16 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./SeSlider.module.css";
 import Link from "next/link";
 import { blob } from "stream/consumers";
+import dynamic from "next/dynamic";
 
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+});
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
@@ -97,9 +101,8 @@ const SeSlider = () => {
               <div className={style.cir_tx}>
                 <div className={style.cir2}>
                   <div>
+                    <div>이번년도 봐야할</div>
                     <div>
-                      이번년도 봐야할</div>
-                      <div>
                       <span className={style.orange}>섹터는</span>{" "}
                     </div>
                     이미 <span className={style.orange}>정해져있다!</span>
@@ -116,15 +119,18 @@ const SeSlider = () => {
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
-                    <div> <a href="#"
-                        style={{ color: "#f0ab27", fontWeight: "bold" }}
-                        onClick={() => {
-                          window.open("https://sbstock.kr/", "_blank");
-                        }}
-                        >
-                          ▶담당자와 상담하기
-                        </a>
-                    </div>
+                  <div>
+                    {" "}
+                    <a
+                      href="#"
+                      style={{ color: "#f0ab27", fontWeight: "bold" }}
+                      onClick={() => {
+                        window.open("https://sbstock.kr/", "_blank");
+                      }}
+                    >
+                      ▶담당자와 상담하기
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,12 +163,8 @@ const SeSlider = () => {
                     <div>
                       단타<span>·</span>스윙
                     </div>
-                    <div>
-                      고객님들의 
-                    </div>
-                    <div>
-                      투자성향
-                    </div>
+                    <div>고객님들의</div>
+                    <div>투자성향</div>
                     <div>
                       프라이빗 <span>1:1컨설팅</span>
                     </div>

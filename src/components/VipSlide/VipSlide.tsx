@@ -1,7 +1,11 @@
 import React from "react";
 import style from "./VipSlide.module.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
+import dynamic from "next/dynamic";
 import { isMobile, isDesktop } from "react-device-detect";
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+});
 const VipSlide = () => {
   const settings1 = {
     dots: false,
