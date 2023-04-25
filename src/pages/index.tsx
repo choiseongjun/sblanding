@@ -111,19 +111,18 @@ export default function Home({ title, description, url, keyword }: any) {
         {domLoaded && <SeSlider />}
         {domLoaded && <VipSlide />}
         {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
-        <ProfitIncome />
-
-        <ProfitIncome2 />
-
-        <Intro />
-        <SecondInfo />
-
-        <StockInfo />
-        <Board />
-
-        <FBannerM />
-
-        <Footer />
+        {domLoaded && (
+          <>
+            <ProfitIncome />
+            <ProfitIncome2 />
+            <Intro />
+            <SecondInfo />
+            <StockInfo />
+            <Board />
+            <FBannerM />
+            <Footer />
+          </>
+        )}
       </main>
     </>
   );
