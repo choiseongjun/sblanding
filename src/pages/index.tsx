@@ -28,7 +28,11 @@ const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
 export default function Home({ title, description, url, keyword }: any) {
   const [open, setOpen] = useState(true);
   const [boards, setBoards] = useState([]);
+  const [domLoaded, setDomLoaded] = useState(false);
 
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
   const getBoard = () => {
@@ -104,8 +108,8 @@ export default function Home({ title, description, url, keyword }: any) {
           </Modal>
         )}
         <FBanner />
-        <SeSlider />
-        <VipSlide />
+        {domLoaded && <SeSlider />}
+        {domLoaded && <VipSlide />}
         {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
         <ProfitIncome />
 
