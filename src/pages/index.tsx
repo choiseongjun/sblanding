@@ -83,7 +83,24 @@ export default function Home({ title, description, url, keyword }: any) {
         {/* <script type="text/javascript" src="/adverties.js"></script> */}
         <script dangerouslySetInnerHTML={{ __html: myFunction }}></script>
       </Head>
-
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-JKJ7D0NYT6`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JKJ7D0NYT6', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <main id="home" style={{ backgroundColor: "#fff" }}>
         <Navigation />
         {isDesktop && (
