@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FormCheck } from "react-bootstrap";
 import TelegramApi from "node-telegram-api";
+import axios from "axios";
 
 const FBanner = () => {
   const [userName, setUserName] = useState("");
@@ -16,6 +17,15 @@ const FBanner = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
     }
+    const phoneNumber = `010-${phoneNumber1}-${phoneNumber2}`;
+    const name = userName;
+    const param = {
+      phoneNumber: phoneNumber,
+      name: name,
+    };
+    axios.post("/client", param).then((res) => {
+      console.log("res=", res);
+    });
     const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
     const TELEGRAM_CHAT_ID = -1001848471389;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
