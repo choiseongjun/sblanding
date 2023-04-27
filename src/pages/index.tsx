@@ -71,13 +71,13 @@ export default function Home({ title, description, url, keyword }: any) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           property="og:title"
-          content={title ? title : "Fashion Style Map"}
+          content={title ? title : "SB GLOBAL 투자그룹"}
         />
         <meta property="og:description" content={description} />
 
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} key="ogsitename" />
-        <meta property="og:article:author" content="FashionStyleMap" />
+        <meta property="og:article:author" content="SB GLOBAL 투자그룹" />
         <meta property="og:url" content={url} key="ogurl" />
         {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
         {/* <script type="text/javascript" src="/adverties.js"></script> */}
@@ -171,6 +171,6 @@ Home.getInitialProps = () => {
     title: "SB GLOBAL 투자그룹",
     description: "SB GLOBAL 투자그룹.",
     url: "https://sbglobalstock.co.kr/",
-    keyword: "투자,주식투자,주식,비트코인,선물,급등주,이차전,바이오",
+    keyword: "투자,주식투자,주식,비트코인,선물,급등주,이차전지,바이오",
   };
 };
