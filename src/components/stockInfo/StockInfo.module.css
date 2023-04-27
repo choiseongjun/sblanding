@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  font-family: "GmarketSansMedium";
+}
+.tab1 h2 {
+  font-family: "GmarketSansMedium";
 }
 .box {
   padding: 2%;
