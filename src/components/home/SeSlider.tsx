@@ -73,7 +73,7 @@ const SeSlider = () => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
                       >
-                        2주 무료체험 신청하기
+                        2주 무료체험 <div>신청하기</div>
                       </a>
                     </div>
                   </div>
