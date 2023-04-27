@@ -21,9 +21,28 @@ import StockTwo from "@/components/stockInfo/StockTwo";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import VipSlide from "@/components/VipSlide/VipSlide";
+import Script from "next/script";
 // import Ltinker from "@/components/tinker/Ltinker";
 const FBanner = React.lazy(() => import("@/components/fbanner/FBanner"));
 const FBannerM = React.lazy(() => import("@/components/fbanner/FBannerM"));
+
+const myFunction = ` window._tfa = window._tfa || [];
+window._tfa.push({ notify: "event", name: "page_view", id: 1551338 });
+!(function (t, f, a, x) {
+  if (!document.getElementById(x)) {
+    t.async = 1;
+    t.src = a;
+    t.id = x;
+    f.parentNode.insertBefore(t, f);
+  }
+})(
+  document.createElement("script"),
+  document.getElementsByTagName("script")[0],
+  "//cdn.taboola.com/libtrc/unip/1551338/tfa.js",
+  "tb_tfa_script"
+);
+_tfa.push({ notify: "event", name: "lead", id: 1551338 });
+`;
 
 export default function Home({ title, description, url, keyword }: any) {
   const [open, setOpen] = useState(true);
@@ -61,7 +80,10 @@ export default function Home({ title, description, url, keyword }: any) {
         <meta property="og:article:author" content="FashionStyleMap" />
         <meta property="og:url" content={url} key="ogurl" />
         {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        {/* <script type="text/javascript" src="/adverties.js"></script> */}
+        <script dangerouslySetInnerHTML={{ __html: myFunction }}></script>
       </Head>
+
       <main id="home" style={{ backgroundColor: "#fff" }}>
         <Navigation />
         {isDesktop && (
