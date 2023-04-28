@@ -87,7 +87,7 @@ const SeSlider = () => {
         <div>
           <div className="customSlide2">
             <div>
-              <div className={style.mainCenter}>
+              {/* <div className={style.mainCenter}>
                 <div className={style.mainTitle}>
                   <b className={style.orange}>초보</b>
                   <b className="fWhite">·</b>
@@ -96,7 +96,7 @@ const SeSlider = () => {
                   주식종목 <br />
                   추천서비스
                 </div>
-              </div>
+              </div> */}
 
               <div className={style.cir_tx}>
                 <div className={style.cir2}>
