@@ -5,6 +5,8 @@
   height: 100px;
   background-color: rgb(0, 27, 95);
   bottom: 0;
+  border-top : solid 3px #b9823c ;
+  border-bottom: solid 3px #b9823c;
 }
 .containerM {
   display: none;
