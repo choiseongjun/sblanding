@@ -23,7 +23,7 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 1.2;
-  font-family: "GmarketSansMedium";
+  font-family: "Noto Sans Kr";
 }
 .Title > strong {
   color: #38761d;
@@ -60,7 +60,7 @@
 }
 .elipsis {
   color: #013472;
-  font-family: "GmarketSansMedium";
+  font-family: "Noto Sans Kr";
 }
 .boxI {
   /* display: block; */

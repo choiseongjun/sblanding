@@ -84,7 +84,7 @@ const SeSlider = () => {
         </div>
       </div>
       <div>
-        {/* <div>
+        <div>
           <div className="customSlide2">
             <div>
               <div className={style.mainCenter}>
@@ -137,7 +137,7 @@ const SeSlider = () => {
           </div>
         </div>
       </div>
-      <div> */}
+      <div>
         <div>
           <div className="customSlide3">
             {/* <img
