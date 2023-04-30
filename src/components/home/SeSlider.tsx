@@ -185,10 +185,10 @@ const SeSlider = () => {
                   <div className={style.cir2}>
                     <a
                       href="#"
-                      style={{ color: style.orange }}
-                      onClick={() => {
-                        window.open("https://sbstock.kr/", "_blank");
-                      }}
+                      // style={{ color: style.orange }}
+                      // onClick={() => {
+                      //   window.open("https://sbstock.kr/", "_blank");
+                      // }}
                     >
                       {/* <div>
                         2주간 <span> 체험</span>
