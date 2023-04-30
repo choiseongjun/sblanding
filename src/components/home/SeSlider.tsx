@@ -50,16 +50,28 @@ const SeSlider = () => {
         <div>
           <div className="customSlide1">
             <div className="txt_wrap txt_green">
-              <div className={style.cir_tx2}>
-                {/* <div className={style.tx2_title}>
+            <div className={style.cir2}>
+                    <div>
+                      <a
+                        href="#"
+                        style={{ color: "#f0ab27", fontWeight: "bold" }}
+                        onClick={() => {
+                          window.open("https://sbstock.kr/", "_blank");
+                        }}
+                      >
+                      </a>
+                    </div>
+                  </div>
+              {/* <div className={style.cir_tx2}>
+                <div className={style.tx2_title}>
                   <div style={{ textAlign: "center" }}>
                     고점과 저점을 <div>파악하여 알려주는</div>
                   </div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
                     주식차트 알리미
                   </div>
-                </div> */}
-                {/* <div className={style.cir2Box}>
+                </div>
+                <div className={style.cir2Box}>
                   <div className={style.cir2}>
                     <div>잊기쉬운 타점을</div>
                     알림으로 미리 대응!!
@@ -77,8 +89,9 @@ const SeSlider = () => {
                       </a>
                     </div>
                   </div>
-                </div> */}
-              </div>
+                  
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
