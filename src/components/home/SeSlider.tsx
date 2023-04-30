@@ -163,16 +163,16 @@ const SeSlider = () => {
             /> */}
             <div className="txt_wrap txt_green">
               <div className={style.cir_tx2}>
-                <div className={style.tx2_title}>
+                {/* <div className={style.tx2_title}>
                   <div style={{ textAlign: "center" }}>
                     고객들의 <div>눈높이에 맞춰</div>
                   </div>
                   <div style={{ textAlign: "center" }} className={style.orange}>
                     진행되는 <div>솔루션</div>
                   </div>
-                </div>
+                </div> */}
                 <div className={style.cir2Box}>
-                  <div className={style.cir2}>
+                  {/* <div className={style.cir2}>
                     <div>
                       단타<span>·</span>스윙
                     </div>
@@ -181,7 +181,7 @@ const SeSlider = () => {
                     <div>
                       프라이빗 <span>1:1컨설팅</span>
                     </div>
-                  </div>
+                  </div> */}
                   <div className={style.cir2}>
                     <a
                       href="#"
@@ -190,16 +190,16 @@ const SeSlider = () => {
                         window.open("https://sbstock.kr/", "_blank");
                       }}
                     >
-                      <div>
+                      {/* <div>
                         2주간 <span> 체험</span>
-                      </div>
+                      </div> */}
 
                       {/* <div>
                         <span className="vat">(VAT별도)</span>
                       </div> */}
-                      <div>
+                      {/* <div>
                         자세히보기 <i className="fa fa-arrow-right"></i>
-                      </div>
+                      </div> */}
                     </a>
                   </div>
                 </div>
