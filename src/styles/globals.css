@@ -252,10 +252,11 @@ th {
     position: relative;
     width: 100%;
     height: 700px;
+    background-color: #fdfbee;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/static/images/main5.jpeg");
+    background-image: url("/static/images/mMain1.jpeg");
   }
   .customSlide2 {
     position: relative;
@@ -270,10 +271,11 @@ th {
     position: relative;
     width: 100%;
     height: 700px;
+    background-color: #fdfbee;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/static/images/main6.jpeg");
+    background-image: url("/static/images/mMain3.jpeg");
   }
 
   .react-responsive-modal-modal {

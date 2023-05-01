@@ -124,7 +124,6 @@ export default function Home({ title, description, url, keyword }: any) {
                       color: "yellow",
                       fontFamily: "GmarketSansMedium",
                       padding: 15,
-                      
                     }}
                   >
                     1:1 카톡 상담하기{" "}
