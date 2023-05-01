@@ -7,6 +7,7 @@ import style from "./SeSlider.module.css";
 import Link from "next/link";
 import { blob } from "stream/consumers";
 import dynamic from "next/dynamic";
+import { isDesktop } from "react-device-detect";
 
 const Slider = dynamic(() => import("react-slick"), {
   ssr: false,
@@ -66,60 +67,63 @@ const SeSlider = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <div className="customSlide2">
-            <div>
-              <div className={style.mainCenter}>
-                <div className={style.mainTitle}>
-                  <b className={style.orange}>초보</b>
-                  <b className="fWhite">·</b>
-                  <b className={style.orange}>직장인 투자자</b>를 위한
-                  <br />
-                  주식종목 <br />
-                  추천서비스
+      {isDesktop && (
+        <div className="customSlide2Container">
+          <div>
+            <div className="customSlide2">
+              <div>
+                <div className={style.mainCenter}>
+                  <div className={style.mainTitle}>
+                    <b className={style.orange}>초보</b>
+                    <b className="fWhite">·</b>
+                    <b className={style.orange}>직장인 투자자</b>를 위한
+                    <br />
+                    주식종목 <br />
+                    추천서비스
+                  </div>
                 </div>
-              </div>
 
-              <div className={style.cir_tx}>
-                <div className={style.cir3}>
-                  <div>
-                    <div>이번년도 봐야할</div>
+                <div className={style.cir_tx}>
+                  <div className={style.cir3}>
                     <div>
-                      <span className={style.orange}>섹터는</span>{" "}
+                      <div>이번년도 봐야할</div>
+                      <div>
+                        <span className={style.orange}>섹터는</span>{" "}
+                      </div>
+                      이미 <span className={style.orange}>정해져있다!</span>
                     </div>
-                    이미 <span className={style.orange}>정해져있다!</span>
+                    <div>상승할 종목을 추천해드립니다.</div>
+                    <img
+                      className={style.robot}
+                      // style={{ position: "absolute", bottom: -180, left: "-15%" }}
+                      // src="/static/images/main1.png"
+                      // src="https://www.kokstock.com/images/renewal/main/hand2.png"
+                    />
                   </div>
-                  <div>상승할 종목을 추천해드립니다.</div>
-                  <img
-                    className={style.robot}
-                    // style={{ position: "absolute", bottom: -180, left: "-15%" }}
-                    // src="/static/images/main1.png"
-                    // src="https://www.kokstock.com/images/renewal/main/hand2.png"
-                  />
-                </div>
-                <div className={style.cir3}>
-                  <div>
-                    합리적인 <span className={style.orange}>가격</span>
-                  </div>
-                  <div>
-                    {" "}
-                    <a
-                      href="#"
-                      style={{ color: "#f0ab27", fontWeight: "bold" }}
-                      onClick={() => {
-                        window.open("https://sbstock.kr/", "_blank");
-                      }}
-                    >
-                      ▶담당자와 상담하기
-                    </a>
+                  <div className={style.cir3}>
+                    <div>
+                      합리적인 <span className={style.orange}>가격</span>
+                    </div>
+                    <div>
+                      {" "}
+                      <a
+                        href="#"
+                        style={{ color: "#f0ab27", fontWeight: "bold" }}
+                        onClick={() => {
+                          window.open("https://sbstock.kr/", "_blank");
+                        }}
+                      >
+                        ▶담당자와 상담하기
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
+
       <div>
         <div>
           <div className="customSlide3">
