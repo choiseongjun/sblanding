@@ -77,12 +77,12 @@
     justify-content: flex-start;
     width: auto;
     margin-bottom: 10px;
+    text-align: center;
   }
   .formInput {
     width: 60%;
 
     display: flex;
-    text-align: center;
   }
   .formInput > div {
     margin-right: 20px;
