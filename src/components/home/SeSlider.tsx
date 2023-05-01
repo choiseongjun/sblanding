@@ -52,14 +52,14 @@ const SeSlider = () => {
             <div className="txt_wrap txt_green">
             <div className={style.cir2}>
                     <div>
-                      <a
+                      {/* <a
                         href="#"
                         style={{ color: "#f0ab27", fontWeight: "bold" }}
                         onClick={() => {
                           window.open("https://sbstock.kr/", "_blank");
                         }}
                       >
-                      </a>
+                      </a> */}
                     </div>
                   </div>
               {/* <div className={style.cir_tx2}>
@@ -112,7 +112,7 @@ const SeSlider = () => {
               </div>
 
               <div className={style.cir_tx}>
-                <div className={style.cir2}>
+                <div className={style.cir3}>
                   <div>
                     <div>이번년도 봐야할</div>
                     <div>
@@ -128,7 +128,7 @@ const SeSlider = () => {
                     // src="https://www.kokstock.com/images/renewal/main/hand2.png"
                   />
                 </div>
-                <div className={style.cir2}>
+                <div className={style.cir3}>
                   <div>
                     합리적인 <span className={style.orange}>가격</span>
                   </div>
