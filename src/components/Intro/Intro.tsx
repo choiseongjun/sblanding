@@ -4,7 +4,7 @@ import style from "./intro.module.css";
 const Intro = () => {
   return (
     <div
-      style={{ marginTop: 25 }}
+      style={{ marginTop: 50 }}
       id={"companyIntro"}
       className={style.imgCenter}
     >
