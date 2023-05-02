@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width:1292px;
+  height:6295px;
+  object-fit:cover
 }
 @media (max-width: 675px) {
   .imgCenter img {
