@@ -145,7 +145,7 @@ table {
 .customSlide1 div {
   font-family: "GmarketSansMedium";
 }
-.customSlide2 {
+/* .customSlide2 {
   background-image: url("/static/images/main2.jpeg");
   height: 1000px;
   background-size: cover;
@@ -154,7 +154,7 @@ table {
 }
 .customSlide2 div {
   font-family: "GmarketSansMedium";
-}
+} */
 .customSlide3 {
   background-image: url("/static/images/main6.jpeg");
   width: 100%;
