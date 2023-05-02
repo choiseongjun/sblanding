@@ -73,25 +73,25 @@ const SeSlider = () => {
             <div className="customSlide2">
               <div>
                 <div className={style.mainCenter}>
-                  <div className={style.mainTitle}>
+                  {/* <div className={style.mainTitle}>
                     <b className={style.orange}>초보</b>
                     <b className="fWhite">·</b>
                     <b className={style.orange}>직장인 투자자</b>를 위한
                     <br />
                     주식종목 <br />
                     추천서비스
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className={style.cir_tx}>
                   <div className={style.cir3}>
-                    <div>
+                    {/* <div>
                       <div>이번년도 봐야할</div>
                       <div>
                         <span className={style.orange}>섹터는</span>{" "}
                       </div>
                       이미 <span className={style.orange}>정해져있다!</span>
-                    </div>
+                    </div> */}
                     <div>상승할 종목을 추천해드립니다.</div>
                     <img
                       className={style.robot}
@@ -101,12 +101,12 @@ const SeSlider = () => {
                     />
                   </div>
                   <div className={style.cir3}>
-                    <div>
+                    {/* <div>
                       합리적인 <span className={style.orange}>가격</span>
-                    </div>
+                    </div> */}
                     <div>
                       {" "}
-                      <a
+                      {/* <a
                         href="#"
                         style={{ color: "#f0ab27", fontWeight: "bold" }}
                         onClick={() => {
@@ -114,7 +114,7 @@ const SeSlider = () => {
                         }}
                       >
                         ▶담당자와 상담하기
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -202,3 +202,4 @@ const SeSlider = () => {
 };
 
 export default SeSlider;
+
