@@ -58,7 +58,7 @@ const VipSlide = () => {
       <div className={style.box}>
         <img
           style={{ backgroundColor: "black" }}
-          src="https://keunson.kr/images/renew/vip-on-txt.png"
+          src="/static/images/real.png" 
         />
         <div className={style.box2}>
           <div className={style.title}>지금까지</div>
