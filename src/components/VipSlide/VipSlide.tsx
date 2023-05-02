@@ -58,15 +58,15 @@ const VipSlide = () => {
       <div className={style.box}>
         <img
           style={{ backgroundColor: "black" }}
-          src="https://keunson.kr/images/renew/vip-on-txt.png"
+          src={("/static/images/member.png")}
         />
         <div className={style.box2}>
           <div className={style.title}>지금까지</div>
           <div className={style.title2First}>8</div>
           <div className={style.title2}>2</div>
           <div className={style.title2}>9</div>
-          <div className={style.title2}>0</div>
           <div className={style.title2}>9</div>
+          <div className={style.title2}>2</div>
           <div className={style.title}>가입!</div>
         </div>
       </div>

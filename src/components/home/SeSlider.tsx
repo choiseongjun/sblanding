@@ -96,7 +96,7 @@ const SeSlider = () => {
                     <img
                       className={style.robot}
                       // style={{ position: "absolute", bottom: -180, left: "-15%" }}
-                      // src="/static/images/main1.png"
+                      // src="/static/images/.png"
                       // src="https://www.kokstock.com/images/renewal/main/hand2.png"
                     />
                   </div>
