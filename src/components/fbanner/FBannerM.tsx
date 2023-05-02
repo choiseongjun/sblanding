@@ -86,7 +86,7 @@ const FBanner = () => {
         </div>
 
         <div onClick={() => sendApply()} className={style.consulting}>
-          <img src="https://keunson.kr/images/renew/form-btn.png" />
+          <img src="/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
       </div>
