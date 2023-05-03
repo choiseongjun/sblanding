@@ -89,6 +89,9 @@ const FBanner = () => {
           <img src="/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
+        <div className={style.chkTitle2}>
+        <img src="/static/images/notice1.png" />
+        </div>
       </div>
     </div>
   );
