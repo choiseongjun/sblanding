@@ -101,7 +101,7 @@ export default function Home({ title, description, url, keyword }: any) {
           `,
         }}
       />
-      <main id="home" style={{ backgroundColor: "#ffdf0e" }}>
+      <main id="home" style={{ backgroundColor: "#fff" }}>
         <Navigation />
         {isDesktop && (
           <Modal open={open} onClose={onCloseModal} center>
@@ -120,7 +120,7 @@ export default function Home({ title, description, url, keyword }: any) {
                       position: "absolute",
                       bottom: "2%",
                       right: "36%",
-                      backgroundColor: "#000",
+                      backgroundColor: "#f25700",
                       color: "yellow",
                       fontFamily: "GmarketSansMedium",
                       padding: 15,
