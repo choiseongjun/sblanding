@@ -114,6 +114,6 @@
   .emailBox {
     display: flex;
     justify-content: center;
-    margin-right: 90px;
+    /* margin-right: 90px; */
   }
 }
