@@ -15,7 +15,7 @@
   align-items: center;
   height: 100%;
 }
-.boxInput {
+. {
   display: flex;
   align-items: center;
   height: 100%;
@@ -24,11 +24,11 @@
   margin-bottom: 0px !important;
 }
 
-.boxInput2 {
+.2 {
   display: flex;
   gap: 15px;
 }
-.boxInput2 select {
+.2 select {
   height: 40px;
 }
 .consulting {
@@ -62,16 +62,16 @@
     z-index: 999;
     bottom: 0px;
   }
-  .boxInput {
-    display: block;
+  . {
+    display: inline;
   }
-  .boxInputContainer {
+  .Container {
     /* display: block; */
   }
   .containerM .box {
     display: block;
   }
-  .boxInput2 {
+  .2 {
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
@@ -88,7 +88,7 @@
   .formInput > div {
     margin-right: 20px;
   }
-  .boxInput2 > select {
+  .2 > select {
     width: 20%;
   }
   .chkLinear {
@@ -98,7 +98,7 @@
     color: #fff;
     margin-right: 10px;
   }
-  /* .boxInput2 input {
+  /* .2 input {
     width: 60%;
   } */
   .consulting {
