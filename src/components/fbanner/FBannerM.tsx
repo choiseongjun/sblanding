@@ -7,7 +7,7 @@ import TelegramApi from "node-telegram-api";
 const FBanner = () => {
   const [userName, setUserName] = useState("");
   const [phoneNumber1, setPhoneNumber1] = useState("");
-  const [phoneNumber2, setPhoneNumber2] = useState("");
+  // const [phoneNumber2, setPhoneNumber2] = useState("");
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
 
