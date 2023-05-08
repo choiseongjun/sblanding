@@ -27,7 +27,7 @@
 .boxInput2 {
   display: flex;
   gap: 15px;
-  width: 300px;
+  width: 250px;
 }
 .boxInput2 select {
   height: 40px;
