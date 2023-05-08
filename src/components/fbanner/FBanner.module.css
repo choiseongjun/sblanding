@@ -27,14 +27,10 @@
 .boxInput2 {
   display: flex;
   gap: 15px;
+  width: 300px;
 }
 .boxInput2 select {
   height: 40px;
-}
-.boxInput3 {
-  display: flex;
-  gap: 15px;
-  width: 500px;
 }
 .consulting {
   display: flex;
