@@ -104,6 +104,7 @@ const FBanner = () => {
                   window.open("https://open.kakao.com/me/shon04Se", "_blank");
                 }}
               ></a>
+              확인
           </button>
             </div>
       </div>
