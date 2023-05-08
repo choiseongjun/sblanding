@@ -15,7 +15,7 @@
   align-items: center;
   height: 100%;
 }
-. {
+.boxInput {
   display: flex;
   align-items: center;
   height: 100%;
@@ -24,11 +24,11 @@
   margin-bottom: 0px !important;
 }
 
-.2 {
+.boxInput2 {
   display: flex;
   gap: 15px;
 }
-.2 select {
+.boxInput2 select {
   height: 40px;
 }
 .consulting {
@@ -62,16 +62,16 @@
     z-index: 999;
     bottom: 0px;
   }
-  . {
-    display: inline;
+  .boxInput {
+    display: block;
   }
-  .Container {
+  .boxInputContainer {
     /* display: block; */
   }
   .containerM .box {
     display: block;
   }
-  .2 {
+  .boxInput2 {
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
@@ -88,7 +88,7 @@
   .formInput > div {
     margin-right: 20px;
   }
-  .2 > select {
+  .boxInput2 > select {
     width: 20%;
   }
   .chkLinear {
@@ -98,7 +98,7 @@
     color: #fff;
     margin-right: 10px;
   }
-  /* .2 input {
+  /* .boxInput2 input {
     width: 60%;
   } */
   .consulting {
@@ -109,11 +109,11 @@
     margin-top: 5px;
   }
   .email {
-    width: 20%;
+    width: 50%;
   }
   .emailBox {
     display: flex;
     justify-content: center;
-    /* margin-right: 90px; */
+    margin-right: 90px;
   }
 }

@@ -7,7 +7,7 @@ import TelegramApi from "node-telegram-api";
 const FBanner = () => {
   const [userName, setUserName] = useState("");
   const [phoneNumber1, setPhoneNumber1] = useState("");
-  // const [phoneNumber2, setPhoneNumber2] = useState("");
+  const [phoneNumber2, setPhoneNumber2] = useState("");
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
 
@@ -48,13 +48,21 @@ const FBanner = () => {
                 >
                   <option value="010">010</option>
                 </Form.Select>
-                <div className={style.put}>
+                <div className={style.formInput}>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
                       type="text"
-                      placeholder="00000000"
+                      placeholder="0000"
                     />
+                  </Form.Group>
+                  <Form.Group className="" controlId="formBasic">
+                    <Form.Control
+                      onChange={(e) => setPhoneNumber2(e.target.value)}
+                      type="text"
+                      placeholder="0000"
+                    />
+                  </Form.Group>
                 </div>
               </div>
             </div>
@@ -80,9 +88,6 @@ const FBanner = () => {
         <div onClick={() => sendApply()} className={style.consulting}>
           <img src="/static/images/click.png" />
           {/* <button>상담하기</button> */}
-        </div>
-        <div className={style.chkTitle2}>
-        <img src="/static/images/notice1.png" />
         </div>
       </div>
     </div>
