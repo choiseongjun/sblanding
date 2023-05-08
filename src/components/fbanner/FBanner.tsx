@@ -59,6 +59,7 @@ const FBanner = () => {
                   >
                     <option value="010">010</option>
                   </Form.Select>
+                  <div className={style.boxInput3}>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
@@ -66,7 +67,7 @@ const FBanner = () => {
                       placeholder="00000000"
                     />
                   </Form.Group>
-                  
+                  </div>
                 </div>
               </div>
             </div>
