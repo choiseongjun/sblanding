@@ -27,7 +27,7 @@
 .boxInput2 {
   display: flex;
   gap: 15px;
-  width: 150px;
+  width: 300px;
 }
 .boxInput2 select {
   height: 40px;
@@ -35,7 +35,7 @@
 .boxInput3 {
   display: flex;
   gap: 15px;
-  width: 300px;
+  width: 500px;
 }
 .boxInput3 select {
   height: 40px;
