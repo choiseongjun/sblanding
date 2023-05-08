@@ -94,6 +94,30 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
+        <div>
+              {<img src="/static/images/kakao.jpeg"></img>}
+              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
+              <a
+                href="#"
+                onClick={() => {
+                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
+                }}
+              >
+                  <button
+                    style={{
+                      position: "absolute",
+                      bottom: "2%",
+                      right: "36%",
+                      backgroundColor: "#f25700",
+                      color: "yellow",
+                      fontFamily: "GmarketSansMedium",
+                      padding: 15,
+                    }}
+                  >
+                    1:1 카톡 상담하기{" "}
+                  </button>
+              </a>
+            </div>
       </div>
     </div>
   );
