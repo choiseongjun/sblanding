@@ -96,7 +96,7 @@ const FBanner = () => {
         </div>
         <div>
           <button>
-              {<img src="/static/images/kakao.jpeg"></img>}
+              {<img src="/static/images/kakao.png"></img>}
               {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
               <a
                 href="#"
