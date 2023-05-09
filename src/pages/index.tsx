@@ -148,7 +148,6 @@ export default function Home({ title, description, url, keyword }: any) {
             </div>
           </Modal>
         )}
-        <Top />
         <FBanner />
         {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
