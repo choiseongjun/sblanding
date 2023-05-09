@@ -20,24 +20,15 @@
   align-items: center;
   height: 100%;
   gap: 15px;
-  width: 400px;
+  width: 450px;
   margin-bottom: 0px !important;
 }
 
 .boxInput2 {
   display: flex;
   gap: 15px;
-  width: 250px;
 }
 .boxInput2 select {
-  height: 40px;
-}
-.boxInput3 {
-  display: flex;
-  gap: 15px;
-  width: 500px;
-}
-.boxInput3 select {
   height: 40px;
 }
 .consulting {

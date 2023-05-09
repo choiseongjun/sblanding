@@ -36,8 +36,6 @@ const FBanner = () => {
     alert("신청되었습니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
- 
-
   return (
     <div className={style.container}>
       <div className={style.box}>
@@ -61,15 +59,20 @@ const FBanner = () => {
                   >
                     <option value="010">010</option>
                   </Form.Select>
-                  <div className={style.boxInput3}>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
                       type="text"
-                      placeholder="00000000"
+                      placeholder="0000"
                     />
                   </Form.Group>
-                  </div>
+                  <Form.Group className="" controlId="formBasic">
+                    <Form.Control
+                      onChange={(e) => setPhoneNumber2(e.target.value)}
+                      type="text"
+                      placeholder="0000"
+                    />
+                  </Form.Group>
                 </div>
               </div>
             </div>
@@ -95,10 +98,6 @@ const FBanner = () => {
         <div onClick={() => sendApply()} className={style.consulting}>
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
-        </div>
-        
-        <div onClick={() => sendApply1()} className={style.consulting1}>
-          <img src= "/static/images/kakao.png" />
         </div>
       </div>
     </div>
