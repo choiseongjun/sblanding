@@ -57,7 +57,7 @@ const VipSlide = () => {
     <div className={style.container}>
       <div className={style.box}>
         <img
-          style={{ backgroundColor: "#000" }}
+          // style={{ backgroundColor: "#000" }}
           src="/static/images/real.png" 
         />
         <div className={style.box2}>
