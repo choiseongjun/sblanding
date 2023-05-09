@@ -8,6 +8,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 // import FBanner from "@/components/fbanner/FBanner";
 import Navigation from "@/components/nav/Navigation";
+import Top from "@/components/Top/Top";
 import ProfitIncome from "@/components/profitIncome/ProfitIncome";
 import QuntApply from "@/components/stockInfo/QuntApply";
 import Intro from "@/components/Intro/Intro";
