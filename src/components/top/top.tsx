@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./top.module.css";
+import style from "./Top.module.css";
 import { Link } from "react-scroll";
 
 const Top = () => {
