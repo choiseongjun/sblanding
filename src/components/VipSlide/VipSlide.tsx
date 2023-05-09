@@ -64,7 +64,7 @@ const VipSlide = () => {
           <div className={style.title}>지금까지</div>
           <div className={style.title2First}>8</div>
           <div className={style.title2}>3</div>
-          <div className={style.title2}>1</div>
+          <div className={style.title2}>2</div>
           <div className={style.title2}>0</div>
           <div className={style.title2}>2</div>
           <div className={style.title}>가입!</div>
