@@ -94,19 +94,6 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-        <div>
-          <button>
-              {<img src="/static/images/kakao.png"></img>}
-              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
-              <a
-                href="#"
-                onClick={() => {
-                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
-                }}
-              ></a>
-              확인
-          </button>
-            </div>
       </div>
     </div>
   );
