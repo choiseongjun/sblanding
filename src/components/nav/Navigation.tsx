@@ -36,10 +36,10 @@ const Navigation = () => {
             <a
               href="#"
               onClick={() => {
-                window.open("https://sbstock.kr/", "_blank");
+                window.open("https://open.kakao.com/me/shon04Se", "_blank");
               }}
             >
-              무료상담 신청하기
+              카카오톡 상담하기 
             </a>
           </div>
           <div>
