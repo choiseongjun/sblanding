@@ -17,7 +17,7 @@
   display: flex;
 }
 .title {
-  background-color: #b69a6f;
+  background-color: #fff0c1;
   color: #000000;
   font-size: 15px;
   font-weight: 600;
@@ -26,7 +26,7 @@
   margin-left: 10px;
 }
 .title2 {
-  background-color: #b69a6f;
+  background-color: #fff0c1;
   color: #000000;
   font-size: 28px;
   background-color: red;
@@ -58,12 +58,12 @@
   display: flex;
   align-items: center;
   height: 100%;
-  background-color:  #b69a6f;
+  background-color:  #fff0c1;
 }
 .sliderBox {
   display: flex;
   align-items: center;
-  background-color:  #b69a6f;
+  background-color:  #fff0c1;
 }
 .joinComple {
   padding: 5px;
