@@ -2,7 +2,7 @@ import React from "react";
 import style from "./top.module.css";
 import { Link } from "react-scroll";
 
-const top = () => {
+const Top = () => {
     return (
     <div className={style.container1}>
       <div className={style.box1}>
@@ -12,4 +12,4 @@ const top = () => {
   );
 };
 
-export default top;
+export default Top;
