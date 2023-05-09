@@ -102,7 +102,7 @@ export default function Home({ title, description, url, keyword }: any) {
         }}
       />
       <main id="home" style={{ backgroundColor: "#fff" }}>
-        <Top/>
+        <Top />
         <Navigation />
         {isDesktop && (
           <Modal open={open} onClose={onCloseModal} center>
