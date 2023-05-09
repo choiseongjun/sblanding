@@ -92,8 +92,8 @@ const FBanner = () => {
         <div className={style.right1}>
         <img src="/static/images/kakao.png" />
         </div>
-        </div>
       </div>
+        
     </div>
   );
 };
