@@ -102,7 +102,7 @@ export default function Home({ title, description, url, keyword }: any) {
         }}
       />
       <main id="home" style={{ backgroundColor: "#fff" }}>
-        <Top />
+        
         <Navigation />
         {isDesktop && (
           <Modal open={open} onClose={onCloseModal} center>
@@ -148,6 +148,7 @@ export default function Home({ title, description, url, keyword }: any) {
             </div>
           </Modal>
         )}
+        <Top />
         <FBanner />
         {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
