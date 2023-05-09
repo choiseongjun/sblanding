@@ -149,6 +149,7 @@ export default function Home({ title, description, url, keyword }: any) {
           </Modal>
         )}
         <FBanner />
+        <Top />
         {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
         {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
