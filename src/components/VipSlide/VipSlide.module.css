@@ -58,11 +58,12 @@
   display: flex;
   align-items: center;
   height: 100%;
-  /* background-color: red; */
+  background-color:  #b69a6f;
 }
 .sliderBox {
   display: flex;
   align-items: center;
+  background-color:  #b69a6f;
 }
 .joinComple {
   padding: 5px;
