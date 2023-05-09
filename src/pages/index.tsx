@@ -109,7 +109,7 @@ export default function Home({ title, description, url, keyword }: any) {
           <Modal open={open} onClose={onCloseModal} center>
             <div>
               {isDesktop && <img src="/static/images/notice.jpeg"></img>}
-              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
+              {{isMobile && <img src="/static/images/notice.jpeg"></img>}}
               <a
                 href="#"
                 onClick={() => {
@@ -131,19 +131,18 @@ export default function Home({ title, description, url, keyword }: any) {
                     1:1 카톡 상담하기{" "}
                   </button>
                 ) : (
-                  <></>
-                  // <button
-                  //   style={{
-                  //     position: "absolute",
-                  //     bottom: "2%",
-                  //     right: "20%",
-                  //     backgroundColor: "#000",
-                  //     color: "orange",
-                  //     padding: 5,
-                  //   }}
-                  // >
-                  //   1:1 카톡 상담가능{" "}
-                  // </button>
+                   <button
+                   style={{
+                   position: "absolute",
+                   bottom: "2%",
+                   right: "20%",
+                    backgroundColor: "#000",
+                    color: "orange",
+                     padding: 5,
+                     }}
+                   >
+                    1:1 카톡 상담가능{" "}
+                   </button>
                 )}
               </a>
             </div>
