@@ -37,70 +37,71 @@ const FBanner = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
   return (
-    <div className={style.container}>
-      <div className={style.box}>
-        <img className={style.best} src="/static/images/best.png" />
+    <div className={style.containerM}>
+    <div className={style.box}>
+      <img className={style.best} src="/static/images/best.png" />
 
+      <div>
         <div>
-          <div>
-            <div className={style.boxInput}>
-              <Form.Group className="" controlId="formBasic">
-                <Form.Control
-                  type="email"
-                  placeholder="이름"
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-              </Form.Group>
-              <div className={style.boxInputContainer}>
-                <div className={style.boxInput2}>
-                  <Form.Select
-                    className="custom-select custom-select-lg ."
-                    aria-label="Default select example"
-                  >
-                    <option value="010">010</option>
-                  </Form.Select>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                      onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text"
-                      placeholder="0000"
-                    />
-                  </Form.Group>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                      type="text"
-                      placeholder="0000"
-                    />
-                  </Form.Group>
-                </div>
+          <div className={style.boxInput}>
+            <Form.Group className={style.emailBox} controlId="formBasic">
+              <Form.Control
+                className={style.email}
+                type="email"
+                placeholder="이름"
+                onChange={(e) => setUserName(e.target.value)}
+              />
+            </Form.Group>
+            <div className={style.boxInput2}>
+              <Form.Select
+                className="custom-select custom-select-lg ."
+                aria-label="Default select example"
+              >
+                <option value="010">010</option>
+              </Form.Select>
+              <div className={style.formInput}>
+                <Form.Group className="" controlId="formBasic">
+                  <Form.Control
+                    onChange={(e) => setPhoneNumber1(e.target.value)}
+                    type="text"
+                    placeholder="0000"
+                  />
+                </Form.Group>
+                <Form.Group className="" controlId="formBasic">
+                  <Form.Control
+                    onChange={(e) => setPhoneNumber2(e.target.value)}
+                    type="text"
+                    placeholder="0000"
+                  />
+                </Form.Group>
               </div>
             </div>
           </div>
-          <div className={style.chkLinear}>
-            <input
-              type="checkbox"
-              onChange={(e) => setCheck1(e.target.checked)}
-              disabled={false}
-              checked={check1}
-            />
-            <div className={style.chkTitle}>개인정보 수집 및 활용동의</div>
-            <input
-              type="checkbox"
-              onChange={(e) => setCheck2(e.target.checked)}
-              disabled={false}
-              checked={check2}
-            />
-            <div className={style.chkTitle}>마케팅수신동의(선택)</div>
-          </div>
         </div>
-
-        <div onClick={() => sendApply()} className={style.consulting}>
-          <img src= "/static/images/click.png" />
-          {/* <button>상담하기</button> */}
+        <div className={style.chkLinear}>
+          <input
+            type="checkbox"
+            onChange={(e) => setCheck1(e.target.checked)}
+            disabled={false}
+            checked={check1}
+          />
+          <div className={style.chkTitle}>개인정보 수집 및 활용동의</div>
+          <input
+            type="checkbox"
+            onChange={(e) => setCheck2(e.target.checked)}
+            disabled={false}
+            checked={check2}
+          />
+          <div className={style.chkTitle}>마케팅수신동의(선택)</div>
         </div>
       </div>
+
+      <div onClick={() => sendApply()} className={style.consulting}>
+        <img src="/static/images/click.png" />
+        {/* <button>상담하기</button> */}
+      </div>
     </div>
+  </div>
   );
 };
 

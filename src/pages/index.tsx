@@ -109,7 +109,7 @@ export default function Home({ title, description, url, keyword }: any) {
           <Modal open={open} onClose={onCloseModal} center>
             <div>
               {isDesktop && <img src="/static/images/notice.jpeg"></img>}
-              {{isMobile && <img src="/static/images/notice.jpeg"></img>}}
+              {isMobile && <img src="/static/images/notice.jpeg"></img>}
               <a
                 href="#"
                 onClick={() => {
