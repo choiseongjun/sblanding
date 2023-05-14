@@ -36,6 +36,11 @@
   align-items: flex-start;
   margin-left: 30px;
 }
+.consulting1 {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+}
 .best {
   height: 100%;
   margin-right: 30px;
