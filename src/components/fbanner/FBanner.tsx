@@ -85,14 +85,14 @@ const FBanner = () => {
             disabled={false}
             checked={check1}
           />
-          <div className={style.chkTitle}>개인정보 수집 및 활용동의</div>
+          <div className={style.chkTitle}>[필수]개인정보 수집 및 활용동의</div>
           <input
             type="checkbox"
             onChange={(e) => setCheck2(e.target.checked)}
             disabled={false}
             checked={check2}
           />
-          <div className={style.chkTitle}>마케팅수신동의(선택)</div>
+          <div className={style.chkTitle}>[필수]마케팅수신동의</div>
         </div>
       </div>
 
