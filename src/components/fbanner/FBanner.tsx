@@ -102,9 +102,9 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-        
+        <div onClick={() => sendApply1()} className={style.consulting}></div>
         <img src="/static/images/kakao.png" />
-        
+        </div>
       </div>
     </div>
   );
