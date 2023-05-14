@@ -99,15 +99,14 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-        <div onClick={() => sendApply()} className={style.consulting1}>
-        <img src="/static/images/kakao.png" />
         <a
                 href="#"
+                img src="/static/images/kakao.png"
                 onClick={() => {
                   window.open("https://open.kakao.com/me/shon04Se", "_blank");
                 }}
               ></a>
-        </div>
+        
       </div>
     </div>
   );
