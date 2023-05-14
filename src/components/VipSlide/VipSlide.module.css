@@ -15,7 +15,6 @@
 .box2 {
   margin-left: 20px;
   display: flex;
-  
 }
 .title {
   background-color: #fff0c1;
@@ -30,6 +29,7 @@
   background-color: #fff0c1;
   color: #000000;
   font-size: 28px;
+  background-color: red;
   margin: 0 1px;
   font-weight: bold;
   padding: 5px;
@@ -37,7 +37,7 @@
 .title2First {
   color: #000000;
   font-size: 28px;
-  background-color: #fff0c1;
+  background-color: red;
   margin-left: 10px;
   font-weight: bold;
   padding: 5px;
