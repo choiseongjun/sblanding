@@ -99,6 +99,7 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
+        <Button>
         <a
                 href="#"
                 img src="/static/images/kakao.png"
@@ -106,7 +107,7 @@ const FBanner = () => {
                   window.open("https://open.kakao.com/me/shon04Se", "_blank");
                 }}
               ></a>
-        
+        </Button>
       </div>
     </div>
   );
