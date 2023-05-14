@@ -37,7 +37,7 @@ const FBanner = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
   const sendApply1 = () => {
-    window.open("https://open.kakao.com/me/shon04Se", "_blank"
+    window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
   return (
     <div className={style.container}>
