@@ -178,3 +178,29 @@ Home.getInitialProps = () => {
       "투자,주식투자,주식,비트코인,선물,급등주,이차전지,바이오,콕스톡,주식종목추천,주식추천,공모주,공모주청약,종목추천,급등주추천,단타종목추천,시가추천,종가추천,시가매매추천,종가매매추천,단타매매추천,주식추천문자",
   };
 };
+
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
+  var ht = null;
+  Kakao.init('YOUR_APP_KEY');
+  Kakao.Link.createTalkLinkButton({
+    container: '#kakao-link-btn',
+    label: '카카오톡으로 공유하기',
+    image: {
+      src: 'http://your-domain.com/image.png',
+      width: '300',
+      height: '200'
+    },
+    webButton: {
+      text: '카카오톡으로 공유하기',
+      url: 'http://your-domain.com/page'
+    }
+  });
+</script>
+위의 스크립트에서 YOUR_APP_KEY 부분을 본인이 발급받은 카카오 앱의 REST API 키로 변경해주시면 됩니다. 또한, 공유할 이미지와 웹 페이지의 주소를 각각 src와 url 속성에 입력하시면 됩니다.
+
+
+
+
+
+

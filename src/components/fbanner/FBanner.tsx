@@ -100,6 +100,55 @@ const FBanner = () => {
         <img src="/static/images/click.png" />
         {/* <button>상담하기</button> */}
       </div>
+      
+      <div onClick={() => sendApply()} className={style.consulting}>
+        <img src="/static/images/kakao.png" />
+        {/* <button>상담하기</button> */}
+      </div>
+
+      {isDesktop && (
+          <Modal open={open} onClose={onCloseModal} center>
+            <div>
+              {isDesktop && <img src="/static/images/notice.jpeg"></img>}
+              {isMobile && <img src="/static/images/notice.jpeg"></img>}
+              <a
+                href="#"
+                onClick={() => {
+                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
+                }}
+              >
+                {isDesktop ? (
+                  <button
+                    style={{
+                      position: "absolute",
+                      bottom: "2%",
+                      right: "36%",
+                      backgroundColor: "#f25700",
+                      color: "yellow",
+                      fontFamily: "GmarketSansMedium",
+                      padding: 15,
+                    }}
+                  >
+                    1:1 카톡 상담하기{" "}
+                  </button>
+                ) : (
+                   <button
+                   style={{
+                   position: "absolute",
+                   bottom: "2%",
+                   right: "20%",
+                    backgroundColor: "#000",
+                    color: "orange",
+                     padding: 5,
+                     }}
+                   >
+                    1:1 카톡 상담가능{" "}
+                   </button>
+                )}
+              </a>
+            </div>
+          </Modal>
+        )}
     </div>
   </div>
   );
