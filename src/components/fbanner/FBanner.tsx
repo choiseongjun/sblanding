@@ -36,6 +36,9 @@ const FBanner = () => {
     alert("신청되었습니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
+  const sendApply1 = () => {
+    window.open("https://open.kakao.com/me/shon04Se", "_blank"
+    };
   return (
     <div className={style.container}>
       <div className={style.box}>
@@ -99,15 +102,9 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-        <Button>
-        <a
-                href="#"
-                img src="/static/images/kakao.png"
-                onClick={() => {
-                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
-                }}
-              ></a>
-        </Button>
+        
+        <img src="/static/images/kakao.png" />
+        
       </div>
     </div>
   );
