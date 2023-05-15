@@ -37,7 +37,7 @@ const FBanner = () => {
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
-  const sendApply1 = () => {
+  const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
   return (
@@ -103,10 +103,11 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-        <div onClick={() => sendApply1()} className={style.consulting1}>
+      </div>
+        <div onClick={() => sendKaKao()} className={style.consulting1}>
         <img src="/static/images/kakao.png" />
         </div>
-      </div>
+  
     </div>
   );
 };
