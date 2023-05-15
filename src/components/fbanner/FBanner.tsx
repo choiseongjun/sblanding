@@ -7,6 +7,7 @@ import TelegramApi from "node-telegram-api";
 import axios from "axios";
 
 const FBanner = () => {
+  axios.defaults.baseURL = "https://sbglobalstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phoneNumber1, setPhoneNumber1] = useState("");
   const [phoneNumber2, setPhoneNumber2] = useState("");
@@ -26,14 +27,14 @@ const FBanner = () => {
     axios.post("/client", param).then((res) => {
       console.log("res=", res);
     });
-    const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
-    const TELEGRAM_CHAT_ID = -1001848471389;
+    const TELEGRAM_TOKEN = "5988764865:AAGaSTlBoLJWfqktKxEZZL9WD5tcXvNfTsw";
+    const TELEGRAM_CHAT_ID = -1001901725222;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `휴대폰 번호 010-${phoneNumber1}-${phoneNumber2} ${userName}님이 신청하였습니다. `
+      `sb글로벌 010-${phoneNumber1}-${phoneNumber2} ${userName}님이 신청하였습니다. `
     );
-    alert("신청되었습니다.");
+    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
   };
   const sendApply1 = () => {
