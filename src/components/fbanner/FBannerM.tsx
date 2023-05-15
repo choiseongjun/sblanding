@@ -16,7 +16,7 @@ const FBanner = () => {
       return alert("동의를 눌러주세요");
     }
     const TELEGRAM_TOKEN = "5988764865:AAGaSTlBoLJWfqktKxEZZL9WD5tcXvNfTsw";
-    const TELEGRAM_CHAT_ID = -1001901725222;
+    const TELEGRAM_CHAT_ID = -845101706;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
