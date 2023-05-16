@@ -40,6 +40,7 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
+  
   return (
     <div className={style.container}>
       <div className={style.box}>
