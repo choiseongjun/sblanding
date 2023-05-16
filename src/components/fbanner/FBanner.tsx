@@ -7,7 +7,7 @@ import TelegramApi from "node-telegram-api";
 import axios from "axios";
 
 const FBanner = () => {
-  axios.defaults.baseURL = "https://sbglobalstock.co.kr";
+  axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phoneNumber1, setPhoneNumber1] = useState("");
   const [phoneNumber2, setPhoneNumber2] = useState("");
