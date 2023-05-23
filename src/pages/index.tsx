@@ -154,10 +154,10 @@ export default function Home({ title, description, url, keyword }: any) {
         {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
         {domLoaded && (
           <>
-            {/* <ProfitIncome />
+            <ProfitIncome />
             <ProfitIncome2 />
             <SecondInfo />
-            <StockInfo /> */}
+            <StockInfo />
             <Board />
             <FBannerM />
             <Footer />
