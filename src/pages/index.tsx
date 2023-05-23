@@ -45,6 +45,7 @@ _tfa.push({ notify: "event", name: "lead", id: 1551338 });
 `;
 
 export default function Home({ title, description, url, keyword }: any) {
+  axios.defaults.baseURL = "https://sbstock.co.kr";
   const [open, setOpen] = useState(true);
   const [boards, setBoards] = useState([]);
   const [domLoaded, setDomLoaded] = useState(false);
