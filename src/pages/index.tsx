@@ -103,10 +103,10 @@ export default function Home({ title, description, url, keyword }: any) {
       />
       <main id="home" style={{ backgroundColor: "#fff" }}>
         
-        <Navigation />
-        {isDesktop && (
+        {/* <Navigation /> */}
+        {/* {isDesktop && (
           <Modal open={open} onClose={onCloseModal} center>
-            <div>
+            <div> */}
               {isDesktop && <img src="/static/images/notice.jpeg"></img>}
               {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
               <a
@@ -157,9 +157,9 @@ export default function Home({ title, description, url, keyword }: any) {
             {/* <ProfitIncome />
             <ProfitIncome2 />
             <SecondInfo />
-            <StockInfo />
+            <StockInfo /> */}
             <Board />
-            <FBannerM /> */}
+            <FBannerM />
             <Footer />
           </>
         )}
