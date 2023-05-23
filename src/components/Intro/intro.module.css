@@ -3,6 +3,10 @@
   justify-content: center;
   cursor: pointer;
 }
+.imgCenter img{
+  width: 1920px;
+
+}
 @media (max-width: 675px) {
   .imgCenter img {
     width: 100%;
