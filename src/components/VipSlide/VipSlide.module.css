@@ -17,8 +17,8 @@
   display: flex;
 }
 .title {
-  background-color: #fff0c1;
-  color: #000000;
+  background-color: #560000;
+  color: #fff0c1;
   font-size: 15px;
   font-weight: 600;
   display: flex;
@@ -26,8 +26,8 @@
   margin-left: 10px;
 }
 .title2 {
-  background-color: #fff0c1;
-  color: #000000;
+  background-color: #560000;
+  color: #fff0c1;
   font-size: 28px;
   background-color: rgba(255, 0, 0, 0);
   margin: 0 1px;
@@ -35,7 +35,7 @@
   padding: 5px;
 }
 .title2First {
-  color: #000000;
+  color: #fff0c1;
   font-size: 28px;
   background-color: rgba(255, 0, 0, 0);
   margin-left: 10px;
@@ -52,18 +52,18 @@
   width: 100%;
 }
 .vipSlider div {
-  color: #ffffff;
+  color: #fff0c1;
 }
 .sliderTitle {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color:  #fff0c1;
+  background-color:   #560000;
 }
 .sliderBox {
   display: flex;
   align-items: center;
-  background-color:  #fff0c1;
+  background-color:  #560000;
 }
 .joinComple {
   padding: 5px;
