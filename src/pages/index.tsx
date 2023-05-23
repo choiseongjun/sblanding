@@ -104,6 +104,50 @@ export default function Home({ title, description, url, keyword }: any) {
       <main id="home" style={{ backgroundColor: "#fff" }}>
         
         <Navigation />
+        {isDesktop && (
+          <Modal open={open} onClose={onCloseModal} center>
+            <div>
+              {isDesktop && <img src="/static/images/notice.jpeg"></img>}
+              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
+              <a
+                href="#"
+                onClick={() => {
+                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
+                }}
+              >
+                {isDesktop ? (
+                  <button
+                    style={{
+                      position: "absolute",
+                      bottom: "2%",
+                      right: "36%",
+                      backgroundColor: "#f25700",
+                      color: "yellow",
+                      fontFamily: "GmarketSansMedium",
+                      padding: 15,
+                    }}
+                  >
+                    1:1 카톡 상담하기{" "}
+                  </button>
+                ) : (
+                  <></>
+                  // <button
+                  //   style={{
+                  //     position: "absolute",
+                  //     bottom: "2%",
+                  //     right: "20%",
+                  //     backgroundColor: "#000",
+                  //     color: "orange",
+                  //     padding: 5,
+                  //   }}
+                  // >
+                  //   1:1 카톡 상담가능{" "}
+                  // </button>
+                )}
+              </a>
+            </div>
+          </Modal>
+        )}
         <FBanner />
         {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
