@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: 60px;
-  background-color: #fff0c1;
+  background-color: #560000;
   display: flex;
   align-items: center;
 }
@@ -52,7 +52,7 @@
   width: 100%;
 }
 .vipSlider div {
-  color: #000000;
+  color: #ffffff;
 }
 .sliderTitle {
   display: flex;
@@ -75,7 +75,7 @@
   padding: 5px;
   border-radius: 5px;
   margin-left: 5px;
-  background-color: #f8424e;
+  background-color: #ff9900;
 }
 @media (max-width: 675px) {
   .container {
