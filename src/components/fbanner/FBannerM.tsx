@@ -86,7 +86,7 @@ const FBanner = () => {
         </div>
 
         <div onClick={() => sendApply()} className={style.consulting}>
-          <img src="/static/images/click.png" />
+          <img src="/static/images/click.jpeg" />
           {/* <button>상담하기</button> */}
         </div>
         <div className={style.right1}>
