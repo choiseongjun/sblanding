@@ -105,31 +105,31 @@ export default function Home({ title, description, url, keyword }: any) {
         
         <Navigation />
         {isDesktop && (
-          // <Modal open={open} onClose={onCloseModal} center>
-          //   <div>
-          //     {isDesktop && <img src="/static/images/notice.jpeg"></img>}
-          //     {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
-          //     <a
-          //       href="#"
-          //       onClick={() => {
-          //         window.open("https://open.kakao.com/me/shon04Se", "_blank");
-          //       }}
-          //     >
-          //       {isDesktop ? (
-          //         <button
-          //           style={{
-          //             position: "absolute",
-          //             bottom: "2%",
-          //             right: "36%",
-          //             backgroundColor: "#f25700",
-          //             color: "yellow",
-          //             fontFamily: "GmarketSansMedium",
-          //             padding: 15,
-          //           }}
-          //         >
-          //           1:1 카톡 상담하기{" "}
-          //         </button>
-          //       ) : (
+          <Modal open={open} onClose={onCloseModal} center>
+            <div>
+              {isDesktop && <img src="/static/images/notice.jpeg"></img>}
+              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
+              <a
+                href="#"
+                onClick={() => {
+                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
+                }}
+              >
+                {isDesktop ? (
+                  <button
+                    style={{
+                      position: "absolute",
+                      bottom: "2%",
+                      right: "36%",
+                      backgroundColor: "#f25700",
+                      color: "yellow",
+                      fontFamily: "GmarketSansMedium",
+                      padding: 15,
+                    }}
+                  >
+                    1:1 카톡 상담하기{" "}
+                  </button>
+                ) : (
                   <></>
                   // <button
                   //   style={{
@@ -143,18 +143,18 @@ export default function Home({ title, description, url, keyword }: any) {
                   // >
                   //   1:1 카톡 상담가능{" "}
                   // </button>
-          //       )}
-          //     </a>
-          //   </div>
-          // </Modal>
+                )}
+              </a>
+            </div>
+          </Modal>
         )}
         <FBanner />
-        {/* // {domLoaded && <VipSlide />}
-        // {domLoaded && <Intro />}
-        // {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
-        // {domLoaded && (
+        {domLoaded && <VipSlide />}
+        {domLoaded && <Intro />}
+        {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
+        {domLoaded && (
           <>
-            <ProfitIncome />
+            {/* <ProfitIncome />
             <ProfitIncome2 />
             <SecondInfo />
             <StockInfo /> */}
@@ -162,7 +162,7 @@ export default function Home({ title, description, url, keyword }: any) {
             <FBannerM />
             <Footer />
           </>
-        {/* )} */}
+        )}
       </main>
     </>
   );
