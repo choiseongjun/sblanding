@@ -55,7 +55,7 @@ const VipSlide = () => {
   };
   return (
     <div className={style.container}>
-      <div className={style.box}>
+      {/* <div className={style.box}>
         <img
           // style={{ backgroundColor: "#000" }}
           src="/static/images/real.png" 
@@ -69,7 +69,7 @@ const VipSlide = () => {
           <div className={style.title2}>2</div>
           <div className={style.title}>가입!</div>
         </div>
-      </div>
+      </div> */}
       <div className={style.vipSlider}>
         <Slider {...settings1}>
           <div className={style.sliderBox}>
