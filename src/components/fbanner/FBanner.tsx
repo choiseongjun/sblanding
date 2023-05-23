@@ -125,14 +125,14 @@ const FBanner = () => {
             />
             <div className={style.chkTitle}>
               (필수)개인정보 수집 및 활용동의
-            <a
+                <a
                   href="javascript:void(0);"
                   onClick={() => setIsOpen2(true)}
                   // onclick="privacy_pop('show', '.pop-policy',2)"
                 >
                   [보기]
                 </a>
-                  </div>
+            </div>
             <input
               type="checkbox"
               onChange={(e) => setCheck2(e.target.checked)}
@@ -140,7 +140,8 @@ const FBanner = () => {
               checked={check2}
             />
             
-            <div className={style.chkTitle}>(필수)마케팅수신동의
+            <div className={style.chkTitle}>
+              (필수)마케팅수신동의
             <a
                   href="javascript:void(0);"
                   onClick={() => setIsOpen(true)}
@@ -148,7 +149,7 @@ const FBanner = () => {
                 >
                   [보기]
                 </a>
-                </div>
+            </div>
           </div>
         </div>
       <div className="imgGrid"></div>
