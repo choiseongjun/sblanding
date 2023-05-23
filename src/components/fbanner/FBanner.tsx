@@ -5,7 +5,8 @@ import Form from "react-bootstrap/Form";
 import { FormCheck } from "react-bootstrap";
 import TelegramApi from "node-telegram-api";
 import axios from "axios";
-import Modal from "react-modal";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 const customStyles = {
   content: {
