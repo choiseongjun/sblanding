@@ -18,9 +18,6 @@ const customStyles = {
   },
 };
 
-const FBanner = () => {
-  return <div> FBanner</div>
-}
 
 const FBanner = () => {
   axios.defaults.baseURL = "https://sbstock.co.kr";
@@ -187,7 +184,7 @@ const FBanner = () => {
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
-     </div>
+      </div>
         <div onClick={() => sendApply()} className={style.consulting}>
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
@@ -197,7 +194,7 @@ const FBanner = () => {
         <img src="/static/images/kakao.png" />
         </div>
         </div>
-        
+      </dlv>  
     </div>
   );
 };
