@@ -148,18 +148,18 @@ export default function Home({ title, description, url, keyword }: any) {
             </div>
           </Modal>
         )}
-        <FBanner />
-        {domLoaded && <VipSlide />}
+        {/* <FBanner /> */}
+        {/* {domLoaded && <VipSlide />} */}
         {domLoaded && <Intro />}
-        {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
+        {/* {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />} */}
         {domLoaded && (
           <>
-            <ProfitIncome />
+            {/* <ProfitIncome />
             <ProfitIncome2 />
             <SecondInfo />
             <StockInfo />
             <Board />
-            <FBannerM />
+            <FBannerM /> */}
             <Footer />
           </>
         )}
