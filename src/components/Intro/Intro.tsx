@@ -8,7 +8,7 @@ const Intro = () => {
       id={"companyIntro"}
       className={style.imgCenter}
     >
-      <img src="/static/images/intro.jpeg" />
+      <img src="/static/images/intro.png" />
     </div>
   );
 };
