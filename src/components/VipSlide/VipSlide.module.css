@@ -80,7 +80,7 @@
 @media (max-width: 675px) {
   .container {
     display: block;
-    width: 70%;
+    width: 100%;
   }
   .box {
     display: block;
@@ -88,6 +88,6 @@
   }
   .vipSlider {
     margin-left: 0px;
-    width: 70%;
+    width: 100%;
   }
 }

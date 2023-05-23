@@ -3,8 +3,6 @@ import style from "./FBanner.module.css";
 import Form from "react-bootstrap/Form";
 import { FormCheck } from "react-bootstrap";
 import TelegramApi from "node-telegram-api";
-import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
 
 const FBanner = () => {
   const [userName, setUserName] = useState("");
