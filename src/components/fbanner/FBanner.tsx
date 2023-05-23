@@ -151,13 +151,13 @@ const FBanner = () => {
                 </div>
           </div>
         </div>
-      <div className="imgGrid">
-      <Modal
+      <div className="imgGrid"></div>
+        <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
-      >
+        >
         <div>
           광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
           SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
@@ -167,13 +167,13 @@ const FBanner = () => {
           동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
-      </Modal>
-      <Modal
+        </Modal>
+        <Modal
         isOpen={modalIsOpen2}
         onRequestClose={() => setIsOpen2(false)}
         style={customStyles}
         contentLabel="Example Modal"
-      >
+        >
         <div>
           개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
           : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
@@ -183,7 +183,7 @@ const FBanner = () => {
           동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
-      </Modal>
+        </Modal>
       </div>
         <div onClick={() => sendApply()} className={style.consulting}>
           <img src= "/static/images/click.png" />
@@ -193,9 +193,7 @@ const FBanner = () => {
         <div onClick={() => sendKaKao()} className={style.consulting1}>
         <img src="/static/images/kakao.png" />
         </div>
-        </div>
-      </dlv>  
-    </div>
+      </div> 
   );
 };
 
