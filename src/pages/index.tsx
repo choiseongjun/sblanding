@@ -1,9 +1,15 @@
 import Head from "next/head";
 import SeSlider from "@/components/home/SeSlider";
+import SecondInfo from "@/components/info/SecondInfo";
+import StockInfo from "@/components/stockInfo/StockInfo";
+import Board from "@/components/board/Board";
 import Footer from "@/components/footer/Footer";
 import axios from "axios";
 import { useEffect, useState } from "react";
 // import FBanner from "@/components/fbanner/FBanner";
+import Navigation from "@/components/nav/Navigation";
+import ProfitIncome from "@/components/profitIncome/ProfitIncome";
+import QuntApply from "@/components/stockInfo/QuntApply";
 import Intro from "@/components/Intro/Intro";
 import { isMobile, isDesktop } from "react-device-detect";
 
@@ -97,12 +103,17 @@ export default function Home({ title, description, url, keyword }: any) {
       />
       <main id="home" style={{ backgroundColor: "#fff" }}>
         
+        <Navigation />
         <FBanner />
-
+        {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
-
+        {boards.length > 0 && <StockTwo title="한줄평 후기" data1={boards} />}
         {domLoaded && (
           <>
+            <ProfitIncome />
+            <ProfitIncome2 />
+            <SecondInfo />
+            <StockInfo />
             <Board />
             <FBannerM />
             <Footer />
