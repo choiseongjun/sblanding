@@ -37,7 +37,7 @@
 .title2First {
   color: #000000;
   font-size: 28px;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0);
   margin-left: 10px;
   font-weight: bold;
   padding: 5px;
