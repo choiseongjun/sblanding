@@ -99,7 +99,7 @@ const FBanner = () => {
           </div>
         </div>
 
-        <div className={style.btn}>
+        <div className={style.btn} style={{ textAlign: 'center' }}>
         <div onClick={() => sendApply()} className={style.consulting} style={{ display: 'inline-block' }}>
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
