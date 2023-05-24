@@ -41,6 +41,9 @@ const FBanner = () => {
 
   return (
     <div className={style.containerM}>
+      <div onClick={() => sendKaKao()} className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
+        <img src="/static/images/kakaom.png" />
+        </div>
       <div className={style.box}>
         <img className={style.best} src="/static/images/best.png" />
 
@@ -98,15 +101,9 @@ const FBanner = () => {
             <div className={style.chkTitle}>마케팅수신동의(선택)</div>
           </div>
         </div>
-
-        <div className={style.btn} style={{ textAlign: 'center' }}>
         <div onClick={() => sendApply()} className={style.consulting} style={{ display: 'inline-block' }}>
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
-        </div>
-        <div onClick={() => sendKaKao()} className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
-        <img src="/static/images/kakaom.png" />
-        </div>
         </div>
       </div>
         
