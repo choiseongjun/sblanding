@@ -139,5 +139,7 @@
   .imgGrid {
     display: block;
   }
-  
+  .consulting2 {
+    float: right;
+  }
 }
