@@ -137,8 +137,7 @@
     display: block;
   }
   .btn{
-    display: flex;
-    justify-content: center;
+    
     background-color: #000000;
   }
   .consulting2 {
