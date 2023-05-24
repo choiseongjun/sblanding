@@ -138,10 +138,11 @@
   }
   .imgGrid {
     display: block;
-    justify-content: center;
   }
   .btn{
     display: flex;
+    justify-content: center;
+    background-color: #fff;
   }
   .consulting2 {
     float: right;
