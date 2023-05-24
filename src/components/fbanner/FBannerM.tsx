@@ -90,9 +90,10 @@ const FBanner = () => {
         </div>
 
         <div className={style.btn}>
-          <div className={style.consulting} style={{ display: 'inline-block' }}>
-         <img src="/static/images/click.png" />
-       </div>
+        <div onClick={() => sendApply()} className={style.consulting} style={{ display: 'inline-block' }}>
+          <img src= "/static/images/click.png" />
+          {/* <button>상담하기</button> */}
+        </div>
       <div className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
         <img src="/static/images/kakaom.png" />
       </div>
