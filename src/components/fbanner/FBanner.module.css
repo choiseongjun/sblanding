@@ -139,6 +139,9 @@
   .imgGrid {
     display: block;
   }
+  .btn{
+    display: block;
+  }
   .consulting2 {
     float: right;
   }
