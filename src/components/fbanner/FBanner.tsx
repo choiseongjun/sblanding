@@ -51,7 +51,7 @@ const FBanner = () => {
             <div className={style.boxInput}>
               <Form.Group className="" controlId="formBasic">
                 <Form.Control
-                  type="text"
+                  type="email"
                   placeholder="이름"
                   maxLength="4"
                   onChange={(e) => setUserName(e.target.value)}
