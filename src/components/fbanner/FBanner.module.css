@@ -139,9 +139,10 @@
   .btn{
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #000000;
   }
   .consulting2 {
     float: right;
   }
+
 }
