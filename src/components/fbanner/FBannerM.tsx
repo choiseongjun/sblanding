@@ -15,6 +15,15 @@ const FBanner = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
     }
+    const phoneNumber = `010-${phoneNumber1}-${phoneNumber2}`;
+    const name = userName;
+    const param = {
+      phoneNumber: phoneNumber,
+      name: name,
+    };
+    axios.post("/client", param).then((res) => {
+      console.log("res=", res);
+    });
     const TELEGRAM_TOKEN = "5988764865:AAGaSTlBoLJWfqktKxEZZL9WD5tcXvNfTsw";
     const TELEGRAM_CHAT_ID = -1001901725222;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
@@ -24,11 +33,11 @@ const FBanner = () => {
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
-    
   };
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
+    
   return (
     <div className={style.containerM}>
       <div className={style.box}>
