@@ -36,8 +36,9 @@ const FBanner = () => {
               <Form.Group className={style.emailBox} controlId="formBasic">
                 <Form.Control
                   className={style.email}
-                  type="email"
+                  type="text"
                   placeholder="이름"
+                  maxLength="4"
                   onChange={(e) => setUserName(e.target.value)}
                 />
               </Form.Group>
@@ -52,15 +53,17 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text"
+                      type="tel"
                       placeholder="0000"
+                      maxLength="4"
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber2(e.target.value)}
-                      type="text"
+                      type="tel"
                       placeholder="0000"
+                      maxLength="4"
                     />
                   </Form.Group>
                 </div>
