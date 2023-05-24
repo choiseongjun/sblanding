@@ -10,10 +10,6 @@ const FBanner = () => {
   const [phoneNumber2, setPhoneNumber2] = useState("");
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
-  const style = {
-    consumer: 'consumer-class',
-    // 다른 스타일 정의
-  };
 
   const sendApply = () => {
     if (!check1) {
@@ -93,16 +89,14 @@ const FBanner = () => {
           </div>
         </div>
 
-        <div className={style.btn}>
-         <div className={style.consulting} style={{ display: 'inline-block' }}>
-         <img src="/static/images/click.png" />
+        <div onClick={() => sendApply()} className={style.consulting}>
+          <img src="/static/images/click.png" />
+          {/* <button>상담하기</button> */}
         </div>
-         <div className={style.consulting2} style={{ display: 'inline-block' }}>
-           <img src="/static/images/kakaom.png" />
-             </div>
-          </div>
-        
-         </div>
+        <div onClick={() => sendKaKao()} className={style.consulting2}>
+        <img src="/static/images/kakaom.png" />
+        </div>
+      </div>
         
     </div>
   );
