@@ -3,6 +3,7 @@ import style from "./FBanner.module.css";
 import Form from "react-bootstrap/Form";
 import { FormCheck } from "react-bootstrap";
 import TelegramApi from "node-telegram-api";
+import axios from "axios";
 
 const FBanner = () => {
   const [userName, setUserName] = useState("");
@@ -105,8 +106,8 @@ const FBanner = () => {
         </div>
         <div onClick={() => sendKaKao()} className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
         <img src="/static/images/kakaom.png" />
-      </div>
-      </div>
+        </div>
+        </div>
       </div>
         
     </div>
