@@ -93,17 +93,16 @@ const FBanner = () => {
           </div>
         </div>
 
-        <div className={style.consumer}>
-
-          <div onClick={() => sendApply()} className={style.consulting}>
-          <img src="/static/images/click.png" />
-          {/* <button>상담하기</button> */}
-          </div>
-          <div onClick={() => sendKaKao()} className={style.consulting2}>
-          <img src="/static/images/kakaom.png" />
-          </div>
+        <div className={style.btn}>
+         <div className={style.consulting} style={{ display: 'inline-block' }}>
+         <img src="/static/images/click.png" />
         </div>
-      </div>
+         <div className={style.consulting2} style={{ display: 'inline-block' }}>
+           <img src="/static/images/kakaom.png" />
+             </div>
+          </div>
+        
+         </div>
         
     </div>
   );
