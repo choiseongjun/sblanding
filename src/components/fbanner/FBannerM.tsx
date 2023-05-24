@@ -11,10 +11,10 @@ const FBanner = () => {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const style = {
-    btn: 'btn-class',
+    consumer: 'consumer-class',
     // 다른 스타일 정의
   };
-  
+
   const sendApply = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
@@ -92,8 +92,10 @@ const FBanner = () => {
             <div className={style.chkTitle}>마케팅수신동의(선택)</div>
           </div>
         </div>
-        <div className={style.btn}>
-          <div onClick={() => sendApply()} className={style.consulting}>
+
+        <div className={style.consumer}>
+
+          <div onClick={() => sendApply()} className={style.consulting12}>
           <img src="/static/images/click.png" />
           {/* <button>상담하기</button> */}
           </div>
