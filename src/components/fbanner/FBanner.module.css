@@ -138,6 +138,7 @@
   }
   .imgGrid {
     display: block;
+    justify-content: center;
   }
   .btn{
     display: flex;
