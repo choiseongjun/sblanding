@@ -37,7 +37,7 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
-    
+
   return (
     <div className={style.containerM}>
       <div className={style.box}>
@@ -103,7 +103,7 @@ const FBanner = () => {
           <img src= "/static/images/click.png" />
           {/* <button>상담하기</button> */}
         </div>
-      <div className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
+        <div onClick={() => sendKaKao()} className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
         <img src="/static/images/kakaom.png" />
       </div>
       </div>
