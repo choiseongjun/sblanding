@@ -24,10 +24,11 @@ const FBanner = () => {
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     window.open("https://open.kakao.com/me/shon04Se", "_blank");
-    const sendKaKao = () => {
-      window.open("https://open.kakao.com/me/shon04Se", "_blank")
-      };
+    
   };
+  const sendKaKao = () => {
+    window.open("https://open.kakao.com/me/shon04Se", "_blank")
+    };
   return (
     <div className={style.containerM}>
       <div className={style.box}>
@@ -96,7 +97,7 @@ const FBanner = () => {
         <img src="/static/images/kakao.png" />
         </div>
         <div onClick={() => sendKaKao()} className={style.consulting2}>
-        <img src="/static/images/kakao.png" />
+        <img src="/static/images/kakaom.png" />
         </div>
       </div>
         
