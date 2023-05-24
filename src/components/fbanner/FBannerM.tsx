@@ -93,7 +93,7 @@ const FBanner = () => {
           <div className={style.consulting} style={{ display: 'inline-block' }}>
          <img src="/static/images/click.png" />
        </div>
-      <div className={style.consulting2} style={{ display: 'inline-block' }}>
+      <div className={style.consulting2} style={{ display: 'inline-block', float: 'right' }}>
         <img src="/static/images/kakaom.png" />
       </div>
       </div>
