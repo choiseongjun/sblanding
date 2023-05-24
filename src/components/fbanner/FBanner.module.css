@@ -140,7 +140,7 @@
     display: block;
   }
   .btn{
-    display: block;
+    display: flex;
   }
   .consulting2 {
     float: right;
