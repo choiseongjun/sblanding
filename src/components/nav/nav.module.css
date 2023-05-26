@@ -6,7 +6,7 @@
   background-color: #560000;
 }
 .box {
-  width: 700px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
