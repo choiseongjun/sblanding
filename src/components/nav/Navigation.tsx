@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navigation = () => {
   return (
     <div className={style.container}>
-      <div className={style.box style={{ display: 'flex', float: 'right' , width:'200px' }}}>
+      <div className={style.box style={{ display: 'inline-block', float: 'right' , width:'200px' }}>}>
         {/* <div>SB GLOBAL</div> */}
         <img src= "/static/images/sblogo.png" />
         {/* <div className={style.rightBox}>
