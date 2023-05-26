@@ -7,8 +7,7 @@ const Navigation = () => {
     <div className={style.container}>
       <div className={style.box style={{ display: 'inline-block', float: 'right' , width:'700px' }}>}>
         {/* <div>SB GLOBAL</div> */}
-        <img src="/static/images/kakaom.png" />
-      
+        <img src= "/static/images/sblogo.png" />
         {/* <div className={style.rightBox}>
           <div>
             {" "}
