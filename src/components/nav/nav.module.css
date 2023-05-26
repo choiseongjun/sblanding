@@ -37,6 +37,13 @@
   height: 80px;
   background-color: #560000;
   }
+  .box {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   .box img {
     display: flex;
     justify-content: center;
