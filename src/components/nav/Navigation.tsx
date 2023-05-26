@@ -6,7 +6,9 @@ const Navigation = () => {
   return (
     <div className={style.container}>
       <div className={style.box}>
-        <img src="/static/images/sblogo.png" />
+        < img
+          style={{ width : 200 , left: 60 }}
+         src="/static/images/sblogo.png" />
         </div>
         {/* <div>SB GLOBAL</div> */}
         {/* <div className={style.rightBox}>
