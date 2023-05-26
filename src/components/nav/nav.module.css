@@ -37,4 +37,11 @@
   height: 80px;
   background-color: #560000;
   }
+  .box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: 10px;
+  }
 }
