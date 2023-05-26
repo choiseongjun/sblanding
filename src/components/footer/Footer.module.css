@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+.innerContainer {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+.innerContainer > div {
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.company {
+  width: 300px;
+  margin-left: 150px;
+  margin-top: 120px;
+  font-size: 14px;
+  color: #fff;
+}
+.company div {
+  margin-top: 20px;
+}
+@media (max-width: 675px) {
+  .company {
+    margin-left: 0px;
+  }
+  .innerContainer {
+    margin-left: 50px;
+  }
+}

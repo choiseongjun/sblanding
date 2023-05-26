@@ -1,0 +1,144 @@
+.mainCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.robot {
+  position: absolute;
+  top: -50px;
+  right: 300px;
+  width: auto;
+  height: auto;
+}
+.mainTitle {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.orange {
+  color: #f39700;
+}
+.cir_tx {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #103140;
+  position: relative;
+  margin-top: 100px;
+}
+.cir {
+  background-color: rgba(255, 255, 255, 0.907);
+  border-radius: 50px;
+  width: 24vw;
+  padding: 0.8vw;
+  border: 2px solid #ccc;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+  font-family: "Dongle";
+  font-weight: 700;
+  font-size: 35px;
+}
+.cir span {
+  font-size: 30px;
+}
+.cir_tx2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #7db2ca;
+  padding-top: 200px;
+}
+
+/* .cir2 {
+  background-color: rgba(255, 255, 255, 0.907);
+  border-radius: 50px;
+  width: 24vw;
+  padding: 0.8vw;
+  border: 2px solid rgb(29, 116, 156);
+  margin-right: 20px;
+  text-align: center;
+  font-size: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dongle";
+  font-weight: 700;
+} */
+.tx2_title div {
+  font-size: 50px;
+}
+.cir3 {
+  background-color: rgba(255, 255, 255, 0.907);
+  border-radius: 50px;
+  width: 24vw;
+  padding: 0.8vw;
+  border: 2px solid rgb(29, 116, 156);
+  margin-right: 20px;
+  text-align: center;
+  font-size: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dongle";
+  font-weight: 700;
+}
+.cir3 Box {
+  display: flex;
+  margin-top: 100px;
+}
+@media (max-width: 1600px) {
+  /* .robot{
+    position:absolute;
+    bottom: -370px; 
+    left:-100px;
+    width:40%;
+  } */
+}
+
+@media (max-width: 1300px) {
+  .robot {
+    position: absolute;
+    bottom: -285px;
+    left: "-20%";
+    /* width:50%; */
+  }
+}
+@media (max-width: 575px) {
+  .robot {
+    display: none !important;
+  }
+  .cir_tx {
+    display: flex;
+  }
+  .cir {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+  }
+  .cir span {
+    font-size: 30px;
+  }
+  /* .cir2 {
+    font-size: 18px;
+    width: 150px;
+    height: 120px;
+    font-weight: bold;
+    font-family: "Dongle";
+  } */
+  .cir3 {
+    font-size: 18px;
+    width: 150px;
+    height: 120px;
+    font-weight: bold;
+    font-family: "Dongle";
+  }
+}

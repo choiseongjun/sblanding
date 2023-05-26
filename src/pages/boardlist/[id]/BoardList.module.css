@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 675px) {
+  .container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .box {
+    width: 100%;
+  }
+  .container table {
+    width: 500px;
+  }
+}

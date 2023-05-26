@@ -1,0 +1,101 @@
+.container {
+  padding: 20px 0;
+}
+.tab1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: "GmarketSansMedium";
+}
+.tab1 h2 {
+  font-family: "GmarketSansMedium";
+}
+.box {
+  padding: 2%;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  background: #fff;
+  max-width: 1200px;
+  width: 100%;
+  height: 480px;
+}
+.Title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Noto Sans Kr";
+}
+.Title > strong {
+  color: #38761d;
+}
+.badge-success {
+  margin-right: 10px;
+}
+.tdBox {
+  display: flex;
+  align-items: center;
+}
+.tdBox > span {
+  margin-right: 10px;
+}
+.tdSecond {
+  display: flex;
+  width: 100%;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+.thCenter {
+  text-align: center;
+
+  /* width: 33.3%; */
+}
+.thCenter:nth-child(1) {
+  width: 60%;
+}
+.thCenter:nth-child(2) {
+  width: 20%;
+}
+.thCenter:nth-child(3) {
+  width: 20%;
+}
+.elipsis {
+  color: #013472;
+  font-family: "Noto Sans Kr";
+}
+.boxI {
+  /* display: block; */
+
+  padding: 1.5px;
+  font-size: 3px;
+  color: #fff;
+  background-color: #28a745;
+}
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .box {
+    height: auto;
+  }
+  .tab1 {
+    margin-top: 50px;
+  }
+  .thCenter:nth-child(1) {
+    width: 20%;
+  }
+  .tdBox {
+    font-size: 14px;
+  }
+  .tdSecond {
+    font-size: 12px;
+    display: block;
+  }
+  .tdSecond span {
+    padding-right: 0px !important;
+  }
+  .imgCenter img {
+    width: 100%;
+  }
+}
