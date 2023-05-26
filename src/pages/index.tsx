@@ -105,6 +105,7 @@ export default function Home({ title, description, url, keyword }: any) {
       <main id="home" style={{ backgroundColor: "#fff" }}>
         
         <FBanner />
+        <Navigation />
         {domLoaded && <VipSlide />}
         {domLoaded && <Intro />}
         
