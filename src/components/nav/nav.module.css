@@ -18,6 +18,11 @@
   font-size: 23px;
   font-family: "GmarketSansMedium";
 }
+.box img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rightBox {
   display: flex;
   align-items: center;

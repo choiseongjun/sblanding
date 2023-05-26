@@ -7,7 +7,7 @@ const Navigation = () => {
     <div className={style.container}>
       <div className={style.box}  >
         < img
-          style={{ width : 100 , left: 60 , display: flex , justify-content: center }}
+          style={{ width : 100 , left: 60  }}
          src="/static/images/sblogo.png" />
         </div>
         {/* <div>SB GLOBAL</div> */}
