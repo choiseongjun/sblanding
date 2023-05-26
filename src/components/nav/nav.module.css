@@ -5,8 +5,11 @@
   height: 80px;
   background-color: #560000;
 }
+.box .img {
+  width: 700px;
+}
 .box {
-  width: 711px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
