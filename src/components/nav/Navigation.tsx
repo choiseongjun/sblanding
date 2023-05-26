@@ -7,7 +7,8 @@ const Navigation = () => {
     <div className={style.container}>
       <div className={style.box}>
         <div>SB GLOBAL</div>
-        <div className={style.rightBox}>
+        <img src= "/static/images/sblogo.png" />
+        {/* <div className={style.rightBox}>
           <div>
             {" "}
             <Link
@@ -76,7 +77,7 @@ const Navigation = () => {
               공지사항
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
