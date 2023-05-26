@@ -6,6 +6,7 @@
   background-color: #fff0c1;
 }
 .box {
+  width: 711px;
   display: flex;
   justify-content: space-between;
   align-items: center;
