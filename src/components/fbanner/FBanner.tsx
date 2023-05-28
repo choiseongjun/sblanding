@@ -40,15 +40,7 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
-    const onlyNumber = (event) => {
-      const keyCode = event.keyCode || event.which;
-      const keyValue = String.fromCharCode(keyCode);
-    
-      if (!/^[0-9]+$/.test(keyValue)) {
-        event.preventDefault();
-      }
-    };
-
+  
   return (
     <div className={style.container}>
       <div className={style.box}>
@@ -77,20 +69,17 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="num" 
-                      minlength={1} 
+                      type="tel"
                       pattern="[0-9]{4}"
                       placeholder="0000"
-                      maxLength={4}
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                     type="num"
+                     type="tel"
                      pattern="[0-9]{4}"
                      placeholder="0000"
-                     maxLength={4}
                     />
                   </Form.Group>
                 </div>
