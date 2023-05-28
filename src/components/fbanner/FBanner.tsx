@@ -69,8 +69,12 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="num"
-                      pattern="[0-9]{4}"
+                      type="text" 
+                      class="form-control"
+                       minlength="1" 
+                       aria-label="Sizing example input" 
+                       aria-describedby="inputGroup-sizing-sm" 
+                       onKeyup="onlyNumber(this)"
                       placeholder="0000"
                       maxLength={4}
                     />
