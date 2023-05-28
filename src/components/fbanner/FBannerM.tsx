@@ -20,7 +20,7 @@ const FBanner = () => {
     if (phoneNumber1.length !== 4 || phoneNumber2.length !== 4) {
       return alert("전화번호를 모두 입력해주세요.");
     }
-    
+
     const phoneNumber = `010-${phoneNumber1}-${phoneNumber2}`;
     const name = userName;
     const param = {
@@ -57,7 +57,6 @@ const FBanner = () => {
             <div className={style.boxInput}>
               <Form.Group className={style.emailBox} controlId="formBasic">
                 <Form.Control
-                  className={style.email}
                   type="email"
                 className="username"
                 placeholder="이름"
