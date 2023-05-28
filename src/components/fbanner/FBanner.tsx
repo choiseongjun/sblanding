@@ -77,7 +77,7 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text" 
+                      type="num" 
                        minlength={1} 
                       onKeyup={onlyNumber(this)}
                       pattern="[0-9]{4}"
