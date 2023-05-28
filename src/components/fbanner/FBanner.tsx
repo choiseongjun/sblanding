@@ -13,22 +13,7 @@ const FBanner = () => {
   const [phoneNumber2, setPhoneNumber2] = useState("");
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
-
-  const handlePhoneNumber1Change = (e) => {
-    const input = e.target.value.replace(/\D/g, ''); // 숫자 이외의 문자 제거
-    if (input.length <= 4) {
-      setPhoneNumber1(input);
-    }
-  };
-
-  const handlePhoneNumber2Change = (e) => {
-    const input = e.target.value.replace(/\D/g, ''); // 숫자 이외의 문자 제거
-    if (input.length <= 4) {
-      setPhoneNumber2(input);
-    }
-  };
-
-
+  
   const sendApply = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
@@ -83,21 +68,22 @@ const FBanner = () => {
                   </Form.Select>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                    onChange={handlePhoneNumber1Change}
-                    value={phoneNumber1}
-                    type="text"
-                    minlength={1}
-                    maxLength={4}
-                    placeholder="0000"
+                      onChange={(e) => setPhoneNumber1(e.target.value)}
+                      type="num"
+                      minlength={1}
+                      maxLength={4}
+                      pattern="[0-9]{4}"
+                      placeholder="0000"
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                    onChange={handlePhoneNumber2Change}
-                    value={phoneNumber2}
-                    type="text"
-                    maxLength={4}
-                    placeholder="0000"
+                     onChange={(e) => setPhoneNumber2(e.target.value)}
+                     type="num"
+                     minlength={1}
+                     maxLength={4}
+                     pattern="[0-9]{4}"
+                     placeholder="0000"
                     />
                   </Form.Group>
                 </div>
