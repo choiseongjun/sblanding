@@ -40,7 +40,15 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
-  
+  const onlyNumber = (e) => {
+  const keyCode = e.keyCode || e.which;
+  const keyValue = String.fromCharCode(keyCode);
+    
+    if (!/^[0-9]+$/.test(keyValue)) {
+    e.preventDefault();
+    }
+    };
+
   return (
     <div className={style.container}>
       <div className={style.box}>
@@ -68,14 +76,14 @@ const FBanner = () => {
                   </Form.Select>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                      onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text" 
-                       minlength="1" 
-                       aria-label="Sizing example input" 
-                       aria-describedby="inputGroup-sizing-sm" 
-                       onKeyup="onlyNumber(this)"
-                      placeholder="0000"
-                      maxLength={4}
+                       onChange={(e) => setPhoneNumber1(e.target.value)}
+                       type="text"
+                       minlength="1"
+                       aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-sm"
+                       onKeyUp={onlyNumber} // 수정: onKeyup -> onKeyUp, "onlyNumber(this)" -> onlyNumber
+                       placeholder="0000"
+                       maxLength={4}
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
