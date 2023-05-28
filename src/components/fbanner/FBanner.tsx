@@ -40,13 +40,13 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
-  const onlyNumber = (e) => {
-  const keyCode = e.keyCode || e.which;
-  const keyValue = String.fromCharCode(keyCode);
+    const onlyNumber = (e: React.KeyboardEvent<HTMLInputElement>) => {
+      const keyCode = e.keyCode || e.which;
+      const keyValue = String.fromCharCode(keyCode);
     
-    if (!/^[0-9]+$/.test(keyValue)) {
-    e.preventDefault();
-    }
+      if (!/^[0-9]+$/.test(keyValue)) {
+        e.preventDefault();
+      }
     };
 
   return (
@@ -76,7 +76,7 @@ const FBanner = () => {
                   </Form.Select>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                       onChange={(e) => setPhoneNumber1(e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPhoneNumber1(e.target.value)}
                        type="text"
                        minlength="1"
                        aria-label="Sizing example input"
