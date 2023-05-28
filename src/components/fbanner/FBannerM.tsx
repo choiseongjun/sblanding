@@ -16,6 +16,11 @@ const FBanner = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
     }
+
+    if (phoneNumber1.length !== 4 || phoneNumber2.length !== 4) {
+      return alert("전화번호를 모두 입력해주세요.");
+    }
+    
     const phoneNumber = `010-${phoneNumber1}-${phoneNumber2}`;
     const name = userName;
     const param = {
@@ -54,8 +59,10 @@ const FBanner = () => {
                 <Form.Control
                   className={style.email}
                   type="email"
-                  placeholder="이름"
-                  onChange={(e) => setUserName(e.target.value)}
+                className="username"
+                placeholder="이름"
+                maxLength={4}
+                onChange={(e) => setUserName(e.target.value)}
                 />
               </Form.Group>
               <div className={style.boxInput2}>
@@ -68,16 +75,20 @@ const FBanner = () => {
                 <div className={style.formInput}>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                      onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text"
-                      placeholder="0000"
+                     onChange={(e) => setPhoneNumber1(e.target.value)}
+                     type="number"
+                     maxLength={4}
+                     pattern="[0-9]{4}"
+                     placeholder="0000"
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                      type="text"
-                      placeholder="0000"
+                    onChange={(e) => setPhoneNumber2(e.target.value)}
+                    type="number"
+                    maxLength={4}
+                    pattern="[0-9]{4}"
+                    placeholder="0000"
                     />
                   </Form.Group>
                 </div>
