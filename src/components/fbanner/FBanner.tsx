@@ -48,7 +48,7 @@ const FBanner = () => {
         e.preventDefault();
       }
     };
-    
+
   return (
     <div className={style.container}>
       <div className={style.box}>
@@ -78,11 +78,8 @@ const FBanner = () => {
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
                       type="text" 
-                      class={form-control}
                        minlength={1} 
-                       aria-label={Sizing example input}
-                       aria-describedby={inputGroup-sizing-sm}
-                       onKeyup={onlyNumber(this)}
+                      onKeyup={onlyNumber(this)}
                       pattern="[0-9]{4}"
                       placeholder="0000"
                       maxLength={4}
