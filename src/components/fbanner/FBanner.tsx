@@ -51,9 +51,11 @@ const FBanner = () => {
             <div className={style.boxInput}>
               <Form.Group className="" controlId="formBasic">
                 <Form.Control
-                  type="email"
-                  placeholder="이름"
-                  onChange={(e) => setUserName(e.target.value)}
+                type="text"
+                className="username"
+                placeholder="이름"
+                maxLength={4}
+                onChange={(e) => setUserName(e.target.value)}
                 />
               </Form.Group>
               <div className={style.boxInputContainer}>
@@ -67,15 +69,17 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="text"
+                      type="tel"
+                      pattern="[0-9]{4}"
                       placeholder="0000"
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
-                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                      type="text"
-                      placeholder="0000"
+                     onChange={(e) => setPhoneNumber2(e.target.value)}
+                     type="tel"
+                     pattern="[0-9]{4}"
+                     placeholder="0000"
                     />
                   </Form.Group>
                 </div>
