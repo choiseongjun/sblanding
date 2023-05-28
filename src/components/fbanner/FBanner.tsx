@@ -40,12 +40,12 @@ const FBanner = () => {
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
-    const onlyNumber = (e) => {
-      const keyCode = e.keyCode || e.which;
+    const onlyNumber = (event) => {
+      const keyCode = event.keyCode || event.which;
       const keyValue = String.fromCharCode(keyCode);
     
       if (!/^[0-9]+$/.test(keyValue)) {
-        e.preventDefault();
+        event.preventDefault();
       }
     };
 
@@ -78,8 +78,7 @@ const FBanner = () => {
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
                       type="num" 
-                       minlength={1} 
-                      onKeyup={onlyNumber(this)}
+                      minlength={1} 
                       pattern="[0-9]{4}"
                       placeholder="0000"
                       maxLength={4}
