@@ -70,7 +70,6 @@ const FBanner = () => {
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
                       type="text" 
-                      classNames="form-control"
                        minlength="1" 
                        aria-label="Sizing example input" 
                        aria-describedby="inputGroup-sizing-sm" 
