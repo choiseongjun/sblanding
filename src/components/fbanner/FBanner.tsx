@@ -69,17 +69,19 @@ const FBanner = () => {
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                       onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="tel"
+                      type="num"
                       pattern="[0-9]{4}"
                       placeholder="0000"
+                      maxLength={4}
                     />
                   </Form.Group>
                   <Form.Group className="" controlId="formBasic">
                     <Form.Control
                      onChange={(e) => setPhoneNumber2(e.target.value)}
-                     type="tel"
+                     type="num"
                      pattern="[0-9]{4}"
                      placeholder="0000"
+                     maxLength={4}
                     />
                   </Form.Group>
                 </div>
