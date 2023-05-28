@@ -18,6 +18,10 @@ const FBanner = () => {
     if (!check1) {
       return alert("동의를 눌러주세요");
     }
+
+    if (phoneNumber1.length !== 4 || phoneNumber2.length !== 4) {
+      return alert("전화번호를 모두 입력해주세요.");
+    }
     const phoneNumber = `010-${phoneNumber1}-${phoneNumber2}`;
     const name = userName;
     const param = {
